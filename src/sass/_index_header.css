@@ -1,0 +1,12 @@
+header {
+  height: 90px;
+  background: #ff465d;
+}
+
+header .center h1 {
+  text-indent: -9999px;
+  background: url(https://gfs12.gomein.net.cn/T16th7BXA_1RCvBVdK.jpg) no-repeat;
+  cursor: pointer;
+  width: 100%;
+  height: 90px;
+}

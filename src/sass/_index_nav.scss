@@ -1,0 +1,58 @@
+@charset "utf-8";
+.nav{//导航栏
+    height: 31px;
+    background: #f8f8f8;
+    nav{
+        li{
+            float: left;
+            font-size: 12px;
+            line-height: 31px;
+            padding: 0 20px 0 10px;
+            position: relative;
+            .active{
+                color: $activecolor;
+            }
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .first{
+            margin-right: 10px;
+        }
+        a{
+            display: inline-block;
+            height: 31px;
+            color: #888;
+            i{
+                width: 12px;
+                height: 13px;
+                margin: -4px 0 0 5px;
+                background: url(../img/ui.png);
+                background-position: -145px -1496px;
+                position: static;
+            }
+            
+        }
+
+        //客服和手机字体图标
+        .icon-kefu,.icon-phone{
+            background-position: 0 -513px;
+            color: $themecolor;
+        }
+
+        //下拉箭头（雪碧图）
+        i{
+            display: inline-block;
+            position: absolute;
+            top: 12px;
+            right: 8px;
+            width: 7px;
+            height: 4px;
+            background: url(../img/ui.png);
+            background-position: -62px -433px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+.menu{//菜单栏
+    height: 38px;
+    border-bottom: 1px solid $themecolor;
+    background: #f8f8f8;
+    h2{
+        float: left;
+        width: 185px;
+        padding-left: 15px;
+        a{
+            display: inline-block;
+            font-size: 15px;
+            color: #585858;
+            line-height: 38px;
+        }
+        span{
+            width: 18px;
+            height: 12px;
+            margin: 13px 17px;
+            float: right;
+            background: url(../img/ui.png) 0 -1344px no-repeat;
+        }
+    }
+    ul{
+        float: left;
+        li{
+            float: left;
+            padding: 0 13px;
+            a{
+                font-size: 15px;
+                line-height: 38px;
+                color: #000;
+                position: relative;
+            }  
+            .third::after,.seventh::after{
+                content: "";
+                display: block;
+                width: 1px;
+                height: 13px;
+                position: absolute;
+                top: 4px;
+                right: -13px;
+                background: #b2b2b2;
+            }
+        }
+    }
+    .wrap{
+        float: right;
+        width: 194px;
+        height: 38px;
+        background: skyblue;
+    }
+}
