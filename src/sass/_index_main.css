@@ -1,6 +1,13 @@
+main .center {
+  overflow: hidden;
+}
+
 main .everyday {
   height: 272px;
   background: skyblue;
+  margin-top: 20px;
+  border-width: 1px;
+  border-style: solid;
 }
 
 main .bargains {

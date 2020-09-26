@@ -51,6 +51,15 @@
                 height: 30px;
                 margin: 0 5px;
             }
+            span{
+                display: inline-block;
+                width: 15px;
+                height: 30px;
+                position: absolute;
+                top: 0;
+                left: -15px;
+                color: #dd00a7;
+            }
             button{
                 border: 0;
                 outline: none;
@@ -63,6 +72,7 @@
                 text-align: center;
                 font-size: 16px;
                 line-height: 30px;
+                position: relative;
             }
         }
         li:first-child{

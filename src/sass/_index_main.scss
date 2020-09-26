@@ -1,8 +1,109 @@
 @charset "utf-8";
-main{
-    .everyday{
+main{//主体
+    .center{
+        padding-top: 20px;
+    }
+    .everyday{//每日必抢
         height: 272px;
-        background: skyblue;
+        .left{//左边列表
+            width: 950px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: $themecolor #e6e6e6 #e6e6e6 #e6e6e6;
+            float: left;
+            .header{
+                border-bottom: 1px solid #e6e6e6;
+            }
+            h3{
+                width: 201px;
+                height: 40px;
+                font-size: 18px;
+                line-height: 40px;
+                color: $activecolor;
+                background: url(https://gfs12.gomein.net.cn/T1ovZvBTbb1RCvBVdK.jpeg) no-repeat 5px 0;
+                text-indent: 45px;
+                float: left;
+            }
+            .timebox{
+                width: 239px;
+                float: right;
+                height: 40px;
+                .time{
+                    font-size: 12px;
+                    line-height: 40px;
+                    color: $activecolor;
+                }
+                .tbox{
+                    display: inline-block;
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 5px;
+                    background: $activecolor;
+                    color: white;
+                    font-size: 20px;
+                    line-height: 27px;
+                    text-align: center;
+                }
+                .dot{
+                    font-size: 20px;
+                    line-height: 40px;
+                    color: $activecolor;
+                }
+            }
+            ul{
+                padding-top: 15px;
+                height: 195px;
+                li{
+                    width: 237px;
+                    height: 179px;
+                    border-right: 1px solid #eee;
+                    float: left;
+                }
+                li:last-child{
+                    border: 0;
+                    width: 236px;
+                }
+                img{
+                    width: 120px;
+                    height: 120px;
+                    margin-left: 58px;
+                    background: red;
+                }
+                .p_price{
+                    margin: 6px 0 0 20px;
+                    .price{
+                        font-size: 20px;
+                        line-height: 22px;
+                        color: $activecolor;
+                    }
+                    .origin{
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #999;
+                        text-decoration: line-through;
+                    }
+                }
+                .title{
+                    width: 196px;
+                    overflow: hidden;
+                    text-overflow: clip;
+                    white-space: nowrap;
+                    margin-left: 20px;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #5e5e5e;
+                }
+            }
+        }
+
+        .right{//右边图片
+            float: right;
+            img{
+                width: 240px;
+                height: 252px;
+                float: right;
+            }
+        }
     }
     .bargains{
         height: 481px;

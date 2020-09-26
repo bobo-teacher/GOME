@@ -12,15 +12,6 @@
     <link rel="stylesheet" href="./sass/index.css">
     <link rel="stylesheet" href="./font/iconfont.css">
     <script src="./font/iconfont.js"></script>
-    <style>
-        .icon {
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
-    </style>
 </head>
 
 <body>
@@ -102,7 +93,10 @@
             <p>
                 <label for="">商品</label>
                 <input type="text" name="" id="" placeholder="海尔冰箱">
-                <button>搜 索</button>
+                <button>
+                    <span class="iconfont icon-maikefeng"></span>
+                    搜 索
+                </button>
             </p>
             <ul>
                 <li>海尔冰箱</li>
@@ -247,7 +241,60 @@
     <main>
         <div class="center">
             <!-- 每日必抢 -->
-            <div class="everyday">每日必抢</div>
+            <div class="everyday clearfix">
+                <section class="left">
+                    <section class="header clearfix">
+                        <h3>美日必抢</h3>
+                        <div class="timebox">
+                            <span class="time">本场次剩余时间</span>
+                            <span id="hour" class="tbox">00</span>
+                            <span class="dot">:</span>
+                            <span id="min" class="tbox">00</span>
+                            <span class="dot">:</span>
+                            <span id="sec" class="tbox">00</span>
+                        </div>
+                    </section>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">
+                                <img src="" alt="">
+                                <p class="p_price">
+                                    <span class="price">¥999</span>
+                                    <span class="origin">#1280</span>
+                                </p>
+                                <p class="title">荣事达(Royalstar)  RB7129S 7公斤 波轮洗衣机 变速洗 亮灰色</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="">
+                                <span class="price"></span>
+                                <span class="origin"></span>
+                                <p class="title"></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="">
+                                <span class="price"></span>
+                                <span class="origin"></span>
+                                <p class="title"></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="">
+                                <span class="price"></span>
+                                <span class="origin"></span>
+                                <p class="title"></p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="right">
+                    <img src="https://gfs7.gomein.net.cn/wireless/T1Ot_7BbAv1RCvBVdK_240_252.jpg" alt="">
+                </section>
+            </div>
 
             <!-- 淘实惠 -->
             <div class="bargains">淘实惠</div>
@@ -285,7 +332,137 @@
 
     <!-- 页尾 -->
     <footer>
-        <div class="center"></div>
+        <div class="center">
+            <section class="top">
+                <span>
+                    <i></i>
+                    <p>
+                        <strong>门店服务</strong>
+                        <a href="">国美门店全国共计2000余家</a>
+                    </p>
+                </span>
+                <span>
+                    <i></i>
+                    <p>
+                        <strong>用户体验</strong>
+                        <a href="">参与用户体验改进计划</a>
+                        <a href="">用户反馈</a>
+                    </p>
+                </span>
+
+                <ul class="clearfix">
+                    <li>
+                        <a href="">国美控股集团</a>
+                    </li>
+                    <li>
+                        <a href="">国美管家</a>
+                    </li>
+                    <li>
+                        <a href="">关于国美</a>
+                    </li>
+                    <li>
+                        <a href="">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="">品牌大全</a>
+                    </li>
+                    <li>
+                        <a href="">商品专题</a>
+                    </li>
+                    <li>
+                        <a href="">商品词</a>
+                    </li>
+                    <li>
+                        <a href="">热词搜索</a>
+                    </li>
+                    <li>
+                        <a href="">友情链接</a>
+                    </li>
+                    <li>
+                        <a href="">风险监测</a>
+                    </li>
+                    <li>
+                        <a href="">销售联盟</a>
+                    </li>
+                    <li>
+                        <a href="">商家入驻</a>
+                    </li>
+                    <li>
+                        <a href="">国美分销</a>
+                    </li>
+                </ul>
+
+                <p>
+                    本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-39900132&nbsp;&nbsp;
+                    <a href="">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+                </p>
+                <p>
+                    网络食品销售第三方平台提供者备案：沪网食备A0015号&nbsp;&nbsp;
+                    <a href="">网络文化经营许可证沪网文[2017]5537-436号</a>&nbsp;&nbsp;
+                    <a href="">增值电信业务经营许可证</a>
+                </p>
+                <p>
+                    客服电话:4008113333&nbsp;&nbsp;
+                    <a href="">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;
+                    <a href="">京B2-20191290</a>&nbsp;&nbsp;
+                    <a href="">经营执照</a>&nbsp;&nbsp;
+                    <a href="">营业执照</a>&nbsp;&nbsp;
+                    <a href="">出版物经营许可证</a>
+                </p>
+                <p>
+                    ©2000-2020&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;
+                    <a href="">
+                        <i></i>
+                        京公网安备 11010502038379号
+                    </a>
+                </p>
+
+                <div class="qrcode-section">
+                    <span class="sm wx">
+                        <i></i>
+                        <p>公众号</p>
+                    </span>
+                    <span class="sm phone">
+                        <i></i>
+                        <p>手机站点</p>
+                    </span>
+                    <span class="big">
+                        <i></i>
+                        <p>扫描下载客户端</p>
+                    </span>
+                </div>
+            </section>
+            <section class="bottom">
+                <a href="">
+                    <i></i>
+                    <p>经营性网站备案信息</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>可信网站信用评价</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>诚信网站</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>朝阳网络警察</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>网购大家评</p>
+                </a>
+                <a href="" class="big">
+                    <i></i>
+                    <p>上海市互联网违法和不良信息举报中心</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>网上有害信息举报专区</p>
+                </a>
+            </section>
+        </div>
     </footer>
 </body>
 

@@ -1,0 +1,164 @@
+@charset "utf-8";
+footer{//页尾
+    border-top: 1px solid $themecolor;
+    background: #f7f7f7;
+    padding-top: 20px;
+    .top{
+        position: relative;
+        span{
+            display: inline-block;
+            width: 265px;
+            height: 45px;
+            padding: 0 50px 40px 0;
+            i{
+                // display: inline-block;
+                width: 45px;
+                height: 45px;
+                background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+                float: left;
+            }
+            p{
+                float: left;
+                margin-left: 10px;
+            }
+            strong{
+                display: block;
+                font-weight: 400;
+                color: #333;
+                font-size: 16px;
+                line-height: 25px;
+            }
+            a{
+                color: #999;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+        span:first-child i{
+            background-position: 0 -135px;
+        }
+        span:nth-child(2) i{
+            background-position: -45px -135px;
+        }
+    
+        li{
+            float: left;
+            padding-right: 13px;
+            a{
+                font-size: 12px;
+                line-height: 22px;
+                color: #666;
+            }
+        }
+    
+        p{
+            color: #999;
+            font-size: 12px;
+            line-height: 22px;
+            a{
+                color: #999;
+            }
+        }
+        .qrcode-section{
+            width: 250px;
+            height: 112px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: center;
+            span{
+                // display: inline-block;
+                padding: 0;
+                font-size: 12px;
+                line-height: 22px;
+                color: #999;
+                float: left;
+                p{
+                    margin: 0;
+                }
+            }
+            i{
+                display: inline-block;
+            }
+            .sm{
+                width: 50px;
+                height: 47px;
+                margin: 0 10px;
+                i{
+                    width: 40px;
+                    height: 25px;
+                    background-image: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+                    background-repeat: no-repeat;
+                }
+                p{
+                    width: 50px;
+                }
+            }
+            .wx i{
+                background-position: -105px -135px;
+            }
+            .phone i{
+                background-position: -185px -135px;
+            }
+            .big{
+                width: 110px;
+                height: 112px;
+                i{
+                    width: 90px;
+                    height: 90px;
+                    margin-left: 10px;
+                    background: url(https://gfs11.gomein.net.cn/T1uZdyBXCT1RCvBVdK.jpg) no-repeat;
+
+                }
+                p{
+                    width: 110px;
+                }
+            }
+        }
+    }
+    
+    .bottom{
+        border-top: 1px solid #e6e6e6;
+        padding: 10px 0 25px 0;
+        a{
+            display: inline-block;
+            width: 120px;
+            vertical-align: top;
+            i{
+                float: left;
+                width: 35px;
+                height: 35px;
+                background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+            }
+            p{
+                font-size: 12px;
+                line-height: 18px;
+                color: #999;
+            }
+        }
+        .big{
+            width: 170px;
+        }
+        a:first-child i{
+            background-position: 0 -180px;
+        }
+        a:nth-child(2) i{
+            background-position: -35px -180px;
+        }
+        a:nth-child(3) i{
+            background-position: -70px -180px;
+        }
+        a:nth-child(4) i{
+            background-position: -105px -180px;
+        }
+        a:nth-child(5) i{
+            background-position: -140px -180px;
+        }
+        a:nth-child(6) i{
+            background-position: -175px -180px;
+        }
+        a:nth-child(7) i{
+            background-position: -238px -180px;
+        }
+    }
+}
