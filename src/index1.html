@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./sass/index.css">
     <link rel="stylesheet" href="./font/iconfont.css">
     <script src="./font/iconfont.js"></script>
+    <script src="script/rs.js" defer async="true" data-main="script/main.js" id="currentpage" pagemodule="index_module" ></script>
 </head>
 
 <body>
@@ -254,13 +255,13 @@
                             <span id="sec" class="tbox">00</span>
                         </div>
                     </section>
-                    <ul class="clearfix">
+                    <ul class="clearfix" id="everydaylist">
                         <li>
                             <a href="">
                                 <img src="" alt="">
                                 <p class="p_price">
                                     <span class="price">¥999</span>
-                                    <span class="origin">#1280</span>
+                                    <span class="origin">¥128</span>
                                 </p>
                                 <p class="title">荣事达(Royalstar)  RB7129S 7公斤 波轮洗衣机 变速洗 亮灰色</p>
                             </a>
@@ -268,25 +269,31 @@
                         <li>
                             <a href="">
                                 <img src="" alt="">
-                                <span class="price"></span>
-                                <span class="origin"></span>
-                                <p class="title"></p>
+                                <p class="p_price">
+                                    <span class="price">¥999</span>
+                                    <span class="origin">¥128</span>
+                                </p>
+                                <p class="title">荣事达(Royalstar)  RB7129S 7公斤 波轮洗衣机 变速洗 亮灰色</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="" alt="">
-                                <span class="price"></span>
-                                <span class="origin"></span>
-                                <p class="title"></p>
+                                <p class="p_price">
+                                    <span class="price">¥999</span>
+                                    <span class="origin">¥128</span>
+                                </p>
+                                <p class="title">荣事达(Royalstar)  RB7129S 7公斤 波轮洗衣机 变速洗 亮灰色</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <img src="" alt="">
-                                <span class="price"></span>
-                                <span class="origin"></span>
-                                <p class="title"></p>
+                                <p class="p_price">
+                                    <span class="price">¥999</span>
+                                    <span class="origin">¥128</span>
+                                </p>
+                                <p class="title">荣事达(Royalstar)  RB7129S 7公斤 波轮洗衣机 变速洗 亮灰色</p>
                             </a>
                         </li>
                     </ul>
@@ -297,13 +304,154 @@
             </div>
 
             <!-- 淘实惠 -->
-            <div class="bargains">淘实惠</div>
+            <div class="bargains clearfix">
+                <section class="bargains_l">
+                    <div class="header">
+                        <h2>淘·实惠</h2>
+                        <span>BARGAINS</span>
+                    </div>
+                    <div class="picbox clearfix">
+                        <div class="pic_l">
+                            <a href="">
+                                <img src="https://gfs5.gomein.net.cn/wireless/T13RE5BmWv1RCvBVdK_219_418.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pic_r">
+                            <a href="">
+                                <img src="https://gfs5.gomein.net.cn/wireless/T11dW5B5Jv1RCvBVdK_199_209.jpg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://gfs8.gomein.net.cn/wireless/T1EtE5B7Yv1RCvBVdK_199_209.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bargains_c">
+                    <div class="header">
+                        <h2>购·新潮</h2>
+                        <span>FASHION</span>
+                    </div>
+                    <div class="picbox clearfix">
+                        <div class="pic_l">
+                            <a href="">
+                                <img src="https://gfs9.gomein.net.cn/wireless/T1bWKKByxg1RCvBVdK_219_418.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pic_r">
+                            <a href="">
+                                <img src="https://gfs7.gomein.net.cn/wireless/T1UjAKBy_T1RCvBVdK_199_209.jpg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://gfs7.gomein.net.cn/wireless/T1rhxKBmAv1RCvBVdK_199_209.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bargains_r">
+                    <div class="header">
+                        <h2>逛·品牌</h2>
+                        <span>BRANDS</span>
+                    </div>
+                    <div class="picbox clearfix">
+                        <div class="pic_l">
+                            <a href="">
+                                <img src="https://gfs7.gomein.net.cn/wireless/T1.rD5Bjbv1RCvBVdK_219_209.jpg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://gfs6.gomein.net.cn/wireless/T1nlA5BsDT1RCvBVdK_219_209.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="brands_box"">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="https://gfs12.gomein.net.cn/T1otJyB4Z_1RCvBVdK.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="https://gfs9.gomein.net.cn/wireless/T1xox4BTLT1RCvBVdK_100_30.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="https://gfs10.gomein.net.cn/T1JLEjBTxv1RCvBVdK.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="https://gfs9.gomein.net.cn/wireless/T1ffZCBTWT1RCvBVdK_100_30.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="https://gfs12.gomein.net.cn/T1UfV_BXDT1RCvBVdK.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="https://gfs13.gomein.net.cn/T1qKEQBmJv1RCvBVdK.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="https://gfs13.gomein.net.cn/T1cZJsBXDT1RCvBVdK.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
             <!-- 猜你喜欢 -->
             <div class="youlike">猜你喜欢</div>
 
             <!-- 一楼 -->
-            <div class="oneF">oneF</div>
+            <div class="oneF">
+                <div class="header clearfix">
+                    <h2>1F 手机通讯</h2>
+                    <ul class="clearfix tab">
+                        <li>
+                            <a href="">活动精选</a>
+                        </li>
+                        <li>
+                            <a href="">新品速递</a>
+                        </li>
+                        <li>
+                            <a href="">热销推荐</a>
+                        </li>
+                        <li>
+                            <a href="">畅享低价</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom clearfix">
+                    <section class="oneF_l"></section>
+                    <section class="oneF_r">
+                        <ul class="clearfix">
+                            <!-- <li>
+                                <a href="">
+                                    <img src="" alt="">
+                                    <p class="title">mmmmm</p>
+                                    <p class="price">¥999999999999</p>
+                                </a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li> -->
+                        </ul>
+                    </section>
+                </div>
+            </div>
 
             <!-- 二楼 -->
             <div class="twoF">twoF</div>
@@ -465,5 +613,6 @@
         </div>
     </footer>
 </body>
-
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="./script/index_everyday_rander.js"></script> -->
 </html>
