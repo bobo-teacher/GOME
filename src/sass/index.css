@@ -42,6 +42,10 @@ header {
   background: #ff465d;
 }
 
+header .center {
+  position: relative;
+}
+
 header .center h1 {
   text-indent: -9999px;
   background: url(https://gfs12.gomein.net.cn/T16th7BXA_1RCvBVdK.jpg) no-repeat;
@@ -50,21 +54,174 @@ header .center h1 {
   height: 90px;
 }
 
+header .center a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  padding: 6px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) -60px -466px no-repeat;
+  z-index: 999;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+
 .nav {
   height: 31px;
   background: #f8f8f8;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 .nav nav li {
   float: left;
   font-size: 12px;
-  line-height: 31px;
+  line-height: 29px;
   padding: 0 20px 0 10px;
   position: relative;
+  border: 1px solid #f8f8f8;
+  border-bottom: 0;
+  height: 30px;
 }
 
 .nav nav li .active {
   color: #f5004b;
+}
+
+.nav nav .arrow_active {
+  background: white;
+  border-color: #e6e6e6;
+  border-bottom: 1px solid white;
+}
+
+.nav nav .arrow_active i {
+  background-position: -55px -433px;
+}
+
+.nav nav .public-dropdown {
+  width: 290px;
+  height: 200px;
+  padding: 10px 15px;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  background: white;
+  z-index: 999;
+  display: none;
+}
+
+.nav nav .public-dropdown .top {
+  width: 290px;
+  height: 55px;
+  padding: 5px 0 20px 0;
+}
+
+.nav nav .public-dropdown .top em {
+  float: left;
+  width: 55px;
+  height: 55px;
+  background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat 0 -337px;
+}
+
+.nav nav .public-dropdown .top p {
+  float: left;
+  padding-top: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #888;
+}
+
+.nav nav .public-dropdown .top a {
+  color: #069;
+}
+
+.nav nav .public-dropdown .bottom {
+  width: 290px;
+  height: 98px;
+  padding-top: 15px;
+  border-top: 1px solid #f3f3f3;
+}
+
+.nav nav .public-dropdown .bottom .arrow {
+  margin-top: 20px;
+  float: left;
+  width: 16px;
+  height: 29px;
+}
+
+.nav nav .public-dropdown .bottom .arrow_left {
+  background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -60px -357px;
+}
+
+.nav nav .public-dropdown .bottom .arrow_right {
+  background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -76px -357px;
+}
+
+.nav nav .public-dropdown .bottom .wrap {
+  margin-top: 10px;
+  float: left;
+  width: 240px;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.nav nav .public-dropdown .bottom .wrap li {
+  padding: 0;
+  border: 0;
+}
+
+.nav nav .public-dropdown .bottom .wrap .iconfont {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  font-size: 40px;
+}
+
+.nav nav .public-dropdown .bottom .wrap a {
+  display: inline-block;
+  width: 80px;
+  font-size: 12px;
+  line-height: 30px;
+  color: #ccc;
+}
+
+.nav nav .public-dropdown .bottom > p {
+  font-size: 12px;
+  line-height: 18px;
+  height: 18px;
+  color: #5e5e5e;
+}
+
+.nav nav .public-dropdown .bottom > p a {
+  height: 18px;
+  float: right;
+  color: #ccc;
+}
+
+.nav nav .mygome-dropdown {
+  width: 260px;
+  height: 240px;
+  background: yellowgreen;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  display: none;
+  z-index: 999;
+}
+
+.nav nav .mygome-dropdown {
+  width: 260px;
+  height: 240px;
+  background: yellowgreen;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  display: none;
+  z-index: 999;
 }
 
 .nav nav .left {
@@ -512,8 +669,13 @@ main .bargains .bargains_l .pic_r, main .bargains .bargains_c .pic_r {
 }
 
 main .bargains .bargains_l .pic_r img, main .bargains .bargains_c .pic_r img {
+  display: block;
   width: 199px;
   height: 209px;
+}
+
+main .bargains .bargains_l .pic_r .top, main .bargains .bargains_c .pic_r .top {
+  border-bottom: 1px dashed #eee;
 }
 
 main .bargains .bargains_l h2 {

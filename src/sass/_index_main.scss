@@ -142,8 +142,12 @@ main{//主体
             .pic_r{
                 float: left;
                 img{
+                    display: block;
                     width: 199px;
                     height: 209px;
+                }
+                .top{
+                    border-bottom: 1px dashed #eee;
                 }
             }
         }

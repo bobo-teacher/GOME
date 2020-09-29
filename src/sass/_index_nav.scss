@@ -2,16 +2,168 @@
 .nav{//导航栏
     height: 31px;
     background: #f8f8f8;
+    border-bottom: 1px solid #f3f3f3;
     nav{
         li{
             float: left;
             font-size: 12px;
-            line-height: 31px;
+            line-height: 29px;
             padding: 0 20px 0 10px;
             position: relative;
+            border: 1px solid #f8f8f8;
+            border-bottom: 0;
+            height: 30px;
             .active{
                 color: $activecolor;
             }
+        }
+        .arrow_active{
+            background: white;
+            border-color:#e6e6e6;
+            border-bottom: 1px solid white;  
+            i{
+                background-position: -55px -433px;
+            }
+        }
+        
+        //国美会员隐藏的box
+        .public-dropdown{
+            width: 290px;
+            height: 200px;
+            padding: 10px 15px;
+            border: 1px solid #e6e6e6;
+            position: absolute;
+            top: 30px;
+            left: -1px;
+            background: white;
+            z-index: 999;
+            display: none;
+            .top{
+                width: 290px;
+                height: 55px;
+                padding: 5px 0 20px 0;
+                em{
+                    float: left;
+                    width: 55px;
+                    height: 55px;
+                    background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat 0 -337px;
+                }
+                p{
+                    float: left;
+                    padding-top: 20px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #888;
+                }
+                a{
+                    color: #069;
+                }
+            }
+            .bottom{
+                width: 290px;
+                height: 98px;
+                padding-top: 15px;
+                border-top: 1px solid #f3f3f3;
+                .arrow{
+                    margin-top: 20px;
+                    float: left;
+                    width: 16px;
+                    height: 29px;
+                }
+                .arrow_left{
+                    background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -60px -357px;
+                }
+                .arrow_right{
+                    background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -76px -357px;
+                }
+                .wrap{
+                    margin-top: 10px;
+                    float: left;
+                    width: 240px;
+                    padding: 0 4px;
+                    text-align: center;
+                    li{
+                        padding: 0;
+                        border: 0;
+                    }
+                    .iconfont{
+                        display: inline-block;
+                        width: 80px;
+                        height: 40px;
+                        font-size: 40px;
+                    }
+                    a{
+                        display: inline-block;
+                        width: 80px;
+                        font-size: 12px;
+                        line-height: 30px;
+                        color: #ccc;
+                    }
+                }
+            }
+            .bottom>p{
+                   font-size: 12px;
+                   line-height: 18px;
+                   height: 18px;
+                   color: #5e5e5e;
+                a{
+                    height: 18px;
+                    float: right;
+                    color: #ccc;
+                } 
+            }
+        }
+
+        //我的国美隐藏的box
+        .mygome-dropdown{
+            width: 260px;
+            height: 240px;
+            background: yellowgreen;
+            border: 1px solid #e6e6e6;
+            position: absolute;
+            top: 30px;
+            left: -1px;
+            display: none;
+            z-index: 999;
+        }
+
+        //企业采购隐藏的box
+        .company-dropdown{
+            width: 200px;
+            height: 200px;
+            background: darkgray;
+            border: 1px solid #e6e6e6;
+            position: absolute;
+            top: 30px;
+            right: -1px;
+            display: none;
+            z-index: 999;
+        }
+
+        //网站导航隐藏的box
+        .website-dropdown{
+            width: 1198px;
+            height: 200px;
+            background: slateblue;
+            border: 1px solid #e6e6e6;
+            position: absolute;
+            top: 30px;
+            right: -101px;
+            display: none;
+            z-index: 999;
+        }
+
+        //手机国美隐藏的box
+        .phone-dropdown{
+            width: 130px;
+            height: 200px;
+            background: darkgray;
+            border: 1px solid #e6e6e6;
+            position: absolute;
+            top: 30px;
+            right: -1px;
+            display: none;
+            z-index: 999;
         }
         .left{
             float: left;
