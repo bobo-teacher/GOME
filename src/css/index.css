@@ -881,6 +881,12 @@ footer {
     cursor: pointer;
     border-bottom: 1px solid #e6e6e6;
     overflow: hidden; }
+  #elevator .louti .active {
+    color: #f5004b; }
+    #elevator .louti .active span {
+      color: #f5004b; }
+    #elevator .louti .active b {
+      display: block; }
   #elevator .louti li:hover, #elevator .louti li:hover span {
     color: #f5004b; }
   #elevator .louti li {

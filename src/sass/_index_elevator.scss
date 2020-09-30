@@ -26,6 +26,17 @@
         overflow: hidden;
 
     }
+    .louti{
+        .active{
+            color: $activecolor; 
+            span{
+                color: $activecolor;  
+            }
+            b{
+                display: block;
+            }
+        }
+    }
     .louti li:hover,.louti li:hover span{
         color: $activecolor;
     }

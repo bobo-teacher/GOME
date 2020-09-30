@@ -13,13 +13,40 @@ define(["pagination", "jlazyload"], function () {
                 let $renderstr = "";
                 $.each(data, function (index, value) {
                     $renderstr += `
-                    <li>
-                        <a href="detail.html?sid=${value.sid}">
-                            <img class="lazy" data-original="${value.url}" width="200" height="200">
-                            <p>${value.title}</p>
-                            <span class="price">¥${value.price}</span>
-                            <span>销量${value.sailnumber}</span>
+                    <li class="goods">
+                        <a href="">
+                            <img src="${value.url}" alt="">
                         </a>
+                        <p class="price">¥${value.price}</p>
+                        <p class="title">
+                            <a href="">
+                                ${value.title}
+                            </a>
+                        </p>
+                        <p class="evaluate">
+                            <a href="">
+                                已有
+                                <span class="nums">1111</span>
+                                人评价
+                            </a>
+                        </p>
+                        <p class="shop">
+                            <span>自营</span>
+                        </p>
+                        <ul class="option clearfix">
+                            <li>
+                                <i class="i_1"></i>
+                            </li>
+                            <li>
+                                <i class="i_2"></i>
+                            </li>
+                            <li>
+                                <i class="i_3"></i>
+                            </li>
+                            <li>
+                                <i class="i_4"></i>
+                            </li>
+                        </ul>
                     </li>
                 `
                 })
@@ -42,7 +69,7 @@ define(["pagination", "jlazyload"], function () {
             })
 
             //分页
-            $(".page").pagination({
+            /* $(".page").pagination({
                 pageCount: 3,
                 jump: true,
                 coping: true,
@@ -143,7 +170,7 @@ define(["pagination", "jlazyload"], function () {
                 $(this).css({
                     border: "1px solid #ccc"
                 })
-            })
+            }) */
         }
     }
 })

@@ -1,4 +1,4 @@
-.list {
+/* .list {
     width: 1160px;
     margin: 0 auto;
     font-size: 14px;
@@ -124,4 +124,291 @@ input {
     outline: none;
     color: #bdbdbd;
     font-size: 14px;
+} */
+
+@charset "utf-8";
+main{
+    //侧边栏
+    .left{
+        width: 198px;
+        height: 3270px;
+        background: red;
+        float: left;
+    }
+    //商品列表
+    .listbox{
+        float: left;
+        width: 992px;
+        height: 5533px;
+        .filter_top{
+            width: 972px;
+            height: 26px;
+            padding: 6px 10px;
+            background-color: #f3f3f3;
+        }
+        .rule{
+            float: left;
+            border: 1px solid #ccc;
+            text-align: center;
+            background: white;
+        }
+        .rule li{
+            float: left;
+            margin: -1px;
+            height: 24px;
+            border: 1px solid transparent;
+            a{
+                display: inline-block;
+                font-size: 12px;
+                line-height: 24px;
+                color: #5e5e5e;
+                padding: 0 20px;
+            }
+        }
+        .rule li:hover{
+            border: 1px solid $activecolor;
+        }
+        .rule .active{
+            background: $activecolor;
+            border: 1px solid $activecolor;
+            a{
+                color: white;
+            }
+        }
+        .filter_price{
+            width: 100px;
+            height: 22px;
+            padding: 5px 10px 8px;
+            margin: -6px 0;
+            border: 1px solid transparent;
+            float: left;
+        }
+        .filter_price li{
+            float: left;
+            color: #5e5e5e;;
+        }
+        .filter_price input{
+            width: 42px;
+            height: 24px;
+            border: 1px solid #ccc;
+            outline: none;
+            text-indent: 5px;
+            color: #a5a5a5;
+        }
+        .page_box{
+            float: right;
+            span{
+                float: left;
+                font-size: 14px;
+                line-height: 24px;
+                padding-right: 11px;
+                color: #888;
+            }
+            a{
+                float: left;
+                width: 30px;
+                height: 24px;
+                border: 1px solid #ccc;
+                margin-right: -1px;
+                text-align: center;
+                line-height: 24px;
+            }
+            .back{
+                background: #f8f8f8;
+                color: #ccc;
+            }
+            .back:hover{
+                background: #fff;
+                color: $activecolor;
+            }
+            .forward{
+                background: #fff;
+                color: $activecolor;
+            }
+        }
+        .filter_bottom{
+            width: 970px;
+            height: 26px;
+            padding: 4px 10px;
+            border: 1px solid #f3f3f3;
+            background: white;
+            .adress_box{
+                float: left;
+                font-size: 12px;
+            }
+            .adress_title{
+                display: inline-block;
+                width: 36px;
+                height: 26px;
+                padding-left: 5px;
+                line-height: 26px;
+                color: #5e5e5e;
+            }
+            .adress_text{
+                display: inline-block;
+                width: 132px;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 6px;
+                border: 1px solid #ccc;
+                a{
+                    color: #5e5e5e;
+                }
+                i{
+                    display: inline-block;
+                    border-top: 4px solid #666;
+                    border-left: 4px solid #fff;
+                    border-right: 4px solid #fff;
+                }
+            }
+            .label-box{
+                float: left;
+                height: 26px;
+                line-height: 26px;
+                i{
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background: url(https://css.gomein.net.cn/search/search2017/image/search.png) no-repeat -20px -90px;
+                    margin: -3px 5px 0 0;
+                    vertical-align: middle;
+                }
+                a{
+                    font-size: 12px;
+                    color: #5e5e5e;
+                    padding-left: 15px;
+                }
+                a:hover{
+                    color: $activecolor;
+                }
+                a:hover i{
+                    background-position: -50px -135px;
+                }
+            }
+        }
+        .list{
+            width: 100%;
+            height: 3000px;
+            .goods{
+                width: 220px;
+                height: 399px;
+                padding: 35px 13px 10px;
+                border: 1px solid #fff;
+                float: left;
+            }
+            .goods:hover{
+                border-color: #e6e6e6;
+            }
+            .goods:hover .option{
+                display: block;
+            }
+            img{
+                width: 210px;
+                height: 210px;
+                margin-left: 5px;
+            }
+            .price{
+                font-size: 20px;
+                line-height: 20px;
+                margin: 13px 5px 5px;
+                color: $activecolor;
+            }
+            .title{
+                width: 210px;
+                height: 40px;
+                a{
+                    color: #5e5e5e;
+                    line-height: 20px;
+                    font-size: 12px;
+                }
+                a:hover{
+                    color: $activecolor;
+                }
+            }
+            .evaluate{
+                height: 28px;
+                padding: 0 23px;
+                line-height: 28px;
+                margin-top: 2px;
+                font-size: 12px;
+                background: url(https://css.gomein.net.cn/search/search2017/image/search.png) -51px 7px no-repeat;
+                a{
+                    font-weight: 400;
+                    color: #333;
+                }
+                span{
+                    color: #069;
+                    font-weight: 700;
+                }
+                span:hover{
+                    color: $activecolor;
+                }
+            }
+            .shop{
+                padding: 0 5px;
+                height: 25px;
+                span{
+                    float: left;
+                    width: 28px;
+                    height: 16px;
+                    line-height: 16px;
+                    color: #fff;
+                    background: $activecolor;
+                    text-align: center;
+                    margin-right: 5px;
+                    font-size: 12px;
+                }
+            }
+            .option{
+                margin-top: 30px;
+                padding: 0 5px;
+                display: none;
+                li{
+                    float: left;
+                    width: 51px;
+                    height: 24px;
+                    border: 1px solid #ddd;
+                    margin-right: -1px;
+                    cursor: pointer;
+                }
+                i{
+                    display: inline-block;
+                    margin: 4px 0 0 18px;
+                    background: url(https://css.gomein.net.cn/search/search2017/image/search.png) no-repeat;
+                }
+                .i_1{
+                    width: 16px;
+                    height: 16px;
+                    background-position: 0 -312px;
+                }
+                .i_2{
+                    width: 17px;
+                    height: 16px;
+                    background-position: -24px -312px;
+                }
+                .i_3{
+                    width: 19px;
+                    height: 16px;
+                    background-position: -24px -334px;
+                }
+                .i_4{
+                    width: 17px;
+                    height: 16px;
+                    background-position: -46px -334px;
+                }
+                li:nth-child(1):hover .i_1{
+                    background-position: 0 -269px;
+                }
+                li:nth-child(2):hover .i_2{
+                    background-position: -24px -269px;
+                }
+                li:nth-child(3):hover .i_3{
+                    background-position: -25px -291px;
+                }
+                li:nth-child(4):hover .i_4{
+                    background-position: -46px -291px;
+                }
+            }
+        }
+    }
 }

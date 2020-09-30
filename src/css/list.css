@@ -552,116 +552,358 @@ footer {
     footer .bottom a:nth-child(7) i {
       background-position: -238px -180px; }
 
-.list {
-  width: 1160px;
-  margin: 0 auto;
-  font-size: 14px; }
+/* .list {
+    width: 1160px;
+    margin: 0 auto;
+    font-size: 14px;
+}
 
 .list li {
-  width: 200px;
-  padding: 10px;
-  float: left;
-  margin: 0 10px 10px 0;
-  border: 1px solid #ccc;
-  height: 310px;
-  position: relative; }
+    width: 200px;
+    padding: 10px;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    height: 310px;
+    position: relative;
+}
 
 .list li p {
-  width: 200px;
-  height: 48px;
-  line-height: 24px;
-  overflow: hidden; }
+    width: 200px;
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+}
 
 .list li img {
-  width: 200px;
-  height: 200px;
-  display: block; }
+    width: 200px;
+    height: 200px;
+    display: block;
+}
 
 .list li span {
-  display: block; }
-
+   display: block;
+}
 .pagelist {
-  clear: both;
-  width: 1170px;
-  margin: 0 auto;
-  text-align: right;
-  padding-right: 20px; }
+    clear: both;
+    width: 1170px;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 20px;
+}
 
 .m-style {
-  float: right;
-  text-align: center; }
+    float: right;
+    text-align: center;
+}
 
 .m-style:before,
 .m-style:after {
-  content: "";
-  display: table; }
+    content: "";
+    display: table;
+}
 
 .m-style:after {
-  clear: both;
-  overflow: hidden; }
+    clear: both;
+    overflow: hidden;
+}
 
 .m-style span {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  color: #bdbdbd;
-  font-size: 14px; }
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
 
 .m-style .active {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  background: #e91e63;
-  color: #fff;
-  font-size: 14px;
-  border: 1px solid #e91e63; }
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #e91e63;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #e91e63;
+}
 
 .m-style a {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  background: #fff;
-  border: 1px solid #ebebeb;
-  color: #bdbdbd;
-  font-size: 14px; }
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    color: #bdbdbd;
+    font-size: 14px;
+}
 
 .m-style a:hover {
-  color: #fff;
-  background: #e91e63; }
+    color: #fff;
+    background: #e91e63;
+}
 
 .m-style .next,
 .m-style .prev {
-  font-family: "Simsun";
-  font-size: 16px;
-  font-weight: bold;
-  width: 80px; }
+    font-family: "Simsun";
+    font-size: 16px;
+    font-weight: bold;
+    width: 80px;
+}
 
 .now,
 .count {
-  padding: 0 5px;
-  color: #f00; }
+    padding: 0 5px;
+    color: #f00;
+}
 
 .eg img {
-  max-width: 800px;
-  min-height: 500px; }
+    max-width: 800px;
+    min-height: 500px;
+}
 
 input {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #bdbdbd;
+    font-size: 14px;
+} */
+main .left {
+  width: 198px;
+  height: 3270px;
+  background: red;
+  float: left; }
+main .listbox {
   float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #ebebeb;
-  outline: none;
-  color: #bdbdbd;
-  font-size: 14px; }
+  width: 992px;
+  height: 5533px; }
+  main .listbox .filter_top {
+    width: 972px;
+    height: 26px;
+    padding: 6px 10px;
+    background-color: #f3f3f3; }
+  main .listbox .rule {
+    float: left;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: white; }
+  main .listbox .rule li {
+    float: left;
+    margin: -1px;
+    height: 24px;
+    border: 1px solid transparent; }
+    main .listbox .rule li a {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 24px;
+      color: #5e5e5e;
+      padding: 0 20px; }
+  main .listbox .rule li:hover {
+    border: 1px solid #f5004b; }
+  main .listbox .rule .active {
+    background: #f5004b;
+    border: 1px solid #f5004b; }
+    main .listbox .rule .active a {
+      color: white; }
+  main .listbox .filter_price {
+    width: 100px;
+    height: 22px;
+    padding: 5px 10px 8px;
+    margin: -6px 0;
+    border: 1px solid transparent;
+    float: left; }
+  main .listbox .filter_price li {
+    float: left;
+    color: #5e5e5e; }
+  main .listbox .filter_price input {
+    width: 42px;
+    height: 24px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-indent: 5px;
+    color: #a5a5a5; }
+  main .listbox .page_box {
+    float: right; }
+    main .listbox .page_box span {
+      float: left;
+      font-size: 14px;
+      line-height: 24px;
+      padding-right: 11px;
+      color: #888; }
+    main .listbox .page_box a {
+      float: left;
+      width: 30px;
+      height: 24px;
+      border: 1px solid #ccc;
+      margin-right: -1px;
+      text-align: center;
+      line-height: 24px; }
+    main .listbox .page_box .back {
+      background: #f8f8f8;
+      color: #ccc; }
+    main .listbox .page_box .back:hover {
+      background: #fff;
+      color: #f5004b; }
+    main .listbox .page_box .forward {
+      background: #fff;
+      color: #f5004b; }
+  main .listbox .filter_bottom {
+    width: 970px;
+    height: 26px;
+    padding: 4px 10px;
+    border: 1px solid #f3f3f3;
+    background: white; }
+    main .listbox .filter_bottom .adress_box {
+      float: left;
+      font-size: 12px; }
+    main .listbox .filter_bottom .adress_title {
+      display: inline-block;
+      width: 36px;
+      height: 26px;
+      padding-left: 5px;
+      line-height: 26px;
+      color: #5e5e5e; }
+    main .listbox .filter_bottom .adress_text {
+      display: inline-block;
+      width: 132px;
+      height: 24px;
+      line-height: 24px;
+      padding: 0 6px;
+      border: 1px solid #ccc; }
+      main .listbox .filter_bottom .adress_text a {
+        color: #5e5e5e; }
+      main .listbox .filter_bottom .adress_text i {
+        display: inline-block;
+        border-top: 4px solid #666;
+        border-left: 4px solid #fff;
+        border-right: 4px solid #fff; }
+    main .listbox .filter_bottom .label-box {
+      float: left;
+      height: 26px;
+      line-height: 26px; }
+      main .listbox .filter_bottom .label-box i {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url(https://css.gomein.net.cn/search/search2017/image/search.png) no-repeat -20px -90px;
+        margin: -3px 5px 0 0;
+        vertical-align: middle; }
+      main .listbox .filter_bottom .label-box a {
+        font-size: 12px;
+        color: #5e5e5e;
+        padding-left: 15px; }
+      main .listbox .filter_bottom .label-box a:hover {
+        color: #f5004b; }
+      main .listbox .filter_bottom .label-box a:hover i {
+        background-position: -50px -135px; }
+  main .listbox .list {
+    width: 100%;
+    height: 3000px; }
+    main .listbox .list .goods {
+      width: 220px;
+      height: 399px;
+      padding: 35px 13px 10px;
+      border: 1px solid #fff;
+      float: left; }
+    main .listbox .list .goods:hover {
+      border-color: #e6e6e6; }
+    main .listbox .list .goods:hover .option {
+      display: block; }
+    main .listbox .list img {
+      width: 210px;
+      height: 210px;
+      margin-left: 5px; }
+    main .listbox .list .price {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 13px 5px 5px;
+      color: #f5004b; }
+    main .listbox .list .title {
+      width: 210px;
+      height: 40px; }
+      main .listbox .list .title a {
+        color: #5e5e5e;
+        line-height: 20px;
+        font-size: 12px; }
+      main .listbox .list .title a:hover {
+        color: #f5004b; }
+    main .listbox .list .evaluate {
+      height: 28px;
+      padding: 0 23px;
+      line-height: 28px;
+      margin-top: 2px;
+      font-size: 12px;
+      background: url(https://css.gomein.net.cn/search/search2017/image/search.png) -51px 7px no-repeat; }
+      main .listbox .list .evaluate a {
+        font-weight: 400;
+        color: #333; }
+      main .listbox .list .evaluate span {
+        color: #069;
+        font-weight: 700; }
+      main .listbox .list .evaluate span:hover {
+        color: #f5004b; }
+    main .listbox .list .shop {
+      padding: 0 5px;
+      height: 25px; }
+      main .listbox .list .shop span {
+        float: left;
+        width: 28px;
+        height: 16px;
+        line-height: 16px;
+        color: #fff;
+        background: #f5004b;
+        text-align: center;
+        margin-right: 5px;
+        font-size: 12px; }
+    main .listbox .list .option {
+      margin-top: 30px;
+      padding: 0 5px;
+      display: none; }
+      main .listbox .list .option li {
+        float: left;
+        width: 51px;
+        height: 24px;
+        border: 1px solid #ddd;
+        margin-right: -1px;
+        cursor: pointer; }
+      main .listbox .list .option i {
+        display: inline-block;
+        margin: 4px 0 0 18px;
+        background: url(https://css.gomein.net.cn/search/search2017/image/search.png) no-repeat; }
+      main .listbox .list .option .i_1 {
+        width: 16px;
+        height: 16px;
+        background-position: 0 -312px; }
+      main .listbox .list .option .i_2 {
+        width: 17px;
+        height: 16px;
+        background-position: -24px -312px; }
+      main .listbox .list .option .i_3 {
+        width: 19px;
+        height: 16px;
+        background-position: -24px -334px; }
+      main .listbox .list .option .i_4 {
+        width: 17px;
+        height: 16px;
+        background-position: -46px -334px; }
+      main .listbox .list .option li:nth-child(1):hover .i_1 {
+        background-position: 0 -269px; }
+      main .listbox .list .option li:nth-child(2):hover .i_2 {
+        background-position: -24px -269px; }
+      main .listbox .list .option li:nth-child(3):hover .i_3 {
+        background-position: -25px -291px; }
+      main .listbox .list .option li:nth-child(4):hover .i_4 {
+        background-position: -46px -291px; }
 
 /*# sourceMappingURL=list.css.map */
