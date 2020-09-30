@@ -1,4 +1,11 @@
 @charset "utf-8";
+.search_box{//隐藏的搜索栏
+    height: 50px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: -50px;
+}
 .search{//搜索栏
     overflow: hidden;
     height: 120px;
@@ -29,8 +36,31 @@
         width: 500px;
         height: 52px;
         margin: 34px auto;
+        position: relative;
+        .search_hide{
+            width: 62px;
+            height: 50px;
+            border: 1px solid $themecolor;
+            position: absolute;
+            top: 31px;
+            left: 0;
+            z-index: 999;
+            background: white;
+            display: none;
+            a{
+                display: block;
+                color: #A5A5A5;
+                font-size: 14px;
+                line-height: 25px;
+                height: 25px;
+                text-align: center;
+            }
+            a:hover{
+                background: #eee;
+            }
+        }
         p{
-            width: 100%;
+            width: 502px;
             height: 30px;
             border: 1px solid $themecolor;
             font-size: 14px;
@@ -109,6 +139,10 @@
             color: #5E5E5E;
             line-height: 39px;
             vertical-align: middle;
+        }
+        .active{
+            color: $activecolor;
+            text-decoration: underline;
         }
     }
     .shopcartbox::after{

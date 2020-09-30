@@ -7,11 +7,12 @@
         float: left;
         width: 185px;
         padding-left: 15px;
+        background: #f8f8f8;
         a{
             display: inline-block;
             font-size: 15px;
             color: #585858;
-            line-height: 38px;
+            line-height: 37px;
         }
         span{
             width: 18px;
@@ -19,6 +20,7 @@
             margin: 13px 17px;
             float: right;
             background: url(../img/ui.png) 0 -1344px no-repeat;
+            display: none;
         }
     }
     ul{
@@ -31,6 +33,9 @@
                 line-height: 38px;
                 color: #000;
                 position: relative;
+            }
+            .active{
+                color: $activecolor;
             }  
             .third::after,.seventh::after{
                 content: "";
@@ -48,6 +53,37 @@
         float: right;
         width: 194px;
         height: 38px;
-        background: skyblue;
+        position: relative;
+        overflow: hidden;
+        ul{
+            float: left;
+            position: absolute;
+            img{
+                width: 170px;
+                height: 40px;
+            }
+        }
+        .arrow{
+            display: inline-block;
+            width: 9px;
+            height: 5px;
+            background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+            position: absolute;
+            border: 1px solid transparent;
+        }
+        .arrow:hover{
+            border: 1px solid #e4e4e4;
+            background-color: #efefef;
+        }
+        .arrow_up{
+            background-position: -20px -1348px;
+            top:12px;
+            right: 0;
+        }
+        .arrow_down{
+            background-position: -20px -1353px;
+            bottom: 12px;
+            right: 0;
+        }
     }
 }

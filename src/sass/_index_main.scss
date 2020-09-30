@@ -106,7 +106,6 @@ main{//主体
 
     .bargains{//淘实惠
         height: 481px;
-        background: pink;
         section{
             border: 1px solid #e6e6e6;
         }
@@ -135,7 +134,7 @@ main{//主体
             .pic_l{
                 float: left;
                 img{
-                    width: 219px;
+                    width: 220px;
                     height: 419px;
                 }
             }
@@ -143,11 +142,30 @@ main{//主体
                 float: left;
                 img{
                     display: block;
-                    width: 199px;
+                    width: 200px;
                     height: 209px;
                 }
                 .top{
                     border-bottom: 1px dashed #eee;
+                }
+            }
+        }
+        .bargains_r{
+            width: 334px;
+            float: left;
+            .pic_l{
+                float: left;
+                width: 219px;
+            }
+            .brands_box{
+                float: left;
+                width: 115px;
+                overflow: hidden;
+                text-align: center;
+                img{
+                    width: 100px;
+                    height: 30px;
+                    margin: 15px 0;
                 }
             }
         }

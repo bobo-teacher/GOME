@@ -139,6 +139,8 @@
         </nav>
     </div>
 
+    <!-- 隐藏的搜索栏 -->
+    <div class="search_box"></div>
     <!-- 搜索栏 -->
     <div class="search center">
         <div class="logo">
@@ -148,7 +150,12 @@
             <a href=""></a>
         </div>
         <form action="" class="tosearch">
-            <p>
+            <!-- 搜索栏隐藏的盒子 -->
+            <div class="search_hide">
+                <a href="">商品</a>
+                <a href="">店铺</a>  
+            </div>
+            <p class="topsearch">
                 <label for="">商品</label>
                 <input type="text" name="" id="" placeholder="海尔冰箱">
                 <button>
@@ -162,7 +169,7 @@
                 <li>华为手机</li>
                 <li>全自动洗衣机</li>
                 <li>月饼礼盒</li>
-                <li>APple新品抢购</li>
+                <li>Apple新品抢购</li>
             </ul>
         </form>
 
@@ -176,9 +183,9 @@
     <!-- 菜单栏 -->
     <div class="menu">
         <div class="center clearfix">
-            <h2>
+            <h2 class="menu_h2">
                 <a href="">全部商品分类</a>
-                <!-- <span></span> -->
+                <span></span>
             </h2>
 
             <ul class="clearfix">
@@ -214,7 +221,22 @@
                 </li>
             </ul>
 
-            <div class="wrap"></div>
+            <div class="wrap clearfix">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs11.gomein.net.cn/T1llK5Bv_T1RCvBVdK.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs11.gomein.net.cn/T1llK5Bv_T1RCvBVdK.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="arrow_up arrow"></a>
+                <a href="javascript:;" class="arrow_down arrow"></a>
+            </div>
         </div>
     </div>
 
@@ -222,7 +244,7 @@
     <div class="banner">
         <div class="center clearfix">
             <div class="left">
-                <ul>
+                <ul class="left_ul">
                     <li>
                         <a href="">手机</a>
                         <a href="">充值</a>
@@ -285,10 +307,66 @@
                         <a href="">国美管家</a>
                     </li>
                 </ul>
+                
             </div>
-
+            <div class="banner_hide">
+                <a href="./list.html">列表页</a>
+            </div>
             <div class="middle">
-                <img src="./img/T1UWCKBTbT1RCvBVdK_750_450.webp" alt="">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs9.gomein.net.cn/wireless/T1LRK7BCEg1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs6.gomein.net.cn/wireless/T1Vth7BsA_1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs9.gomein.net.cn/wireless/T1_tZ7BQE_1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs7.gomein.net.cn/wireless/T1AyC7ByL_1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs5.gomein.net.cn/wireless/T1Xyd7BTC_1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs6.gomein.net.cn/wireless/T18Rx7BKA_1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs5.gomein.net.cn/wireless/T1_zx7BmbT1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://gfs6.gomein.net.cn/wireless/T1rRY7B7Y_1RCvBVdK_750_450.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ol class="clearfix">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="active"></li>
+                </ol>
+                <span id="left" class="arrow"></span>
+                <span id="right" class="arrow"></span>
             </div>
 
             <div class="right"></div>
@@ -420,7 +498,7 @@
                                 <img src="https://gfs6.gomein.net.cn/wireless/T1nlA5BsDT1RCvBVdK_219_209.jpg" alt="">
                             </a>
                         </div>
-                        <div class="brands_box"">
+                        <div class="brands_box">
                             <ul>
                                 <li>
                                     <a href="">
@@ -668,8 +746,58 @@
                 </a>
             </section>
         </div>
-    <!-- </footer>
-    <div id="mm"></div>
+    </footer>
+
+    <!-- 楼梯 -->
+    <aside id="elevator">
+        <div class="fl_nav">楼层导航</div>
+        <ul class="louti">
+            <li>
+                <b></b>
+                <span>1F</span>
+                <p>手机通讯</p>
+            </li>
+            <li>
+                <b></b>
+                <span>2F</span>
+                <p>电脑数码</p>
+            </li>
+            <li>
+                <b></b>
+                <span>3F</span>
+                <p>家用电器</p>
+            </li>
+            <li>
+                <b></b>
+                <span>4F</span>
+                <p>厨房卫浴</p>
+            </li>
+            <li>
+                <b></b>
+                <span>5F</span>
+                <p>国美超市</p>
+            </li>
+            <li>
+                <b></b>
+                <span>6F</span>
+                <p>家居家装</p>
+            </li>
+            <li>
+                <b></b>
+                <span>7F</span>
+                <p>汽车用品</p>
+            </li>
+        </ul>
+        <ul class="arrow">
+            <li>
+                <a href="" class="arrow_up"></a>
+            </li>
+            <li>
+                <a href="" class="arrow_down"></a>
+            </li>
+        </ul>
+    </aside>
+    <!-- <div id="mm"></div>
     <script id="bb"></script> -->
 </body>
 <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>

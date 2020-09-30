@@ -4,11 +4,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>列表页</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <script src="./font/iconfont.js"></script>
+    <script src="script/rs.js" defer async="true" data-main="script/main.js" id="currentpage" pagemodule="list_module" ></script>
 </head>
 
 <body>
-    这里就是首页
+     <!-- 头部 -->
+     <header>
+        <div class="center">
+            <h1>国美首页</h1>
+            <a href="javascript:;"></a>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <nav class="center clearfix">
+            <ul class="left clearfix">
+                <li class="arrow">
+                    <a href="">
+                        国美会员
+                    </a>
+                    <i></i>
+
+                    <!-- 国美会员隐藏的box -->
+                    <div class="public-dropdown dropdown">
+                        <section class="top">
+                            <em></em>
+                            <p>
+                                欢迎来到国美，
+                                <a href="">请登录！</a>
+                            </p>
+                        </section>
+                        <section class="bottom">
+                            <p>
+                                我的特权
+                                <a href="">会员俱乐部</a>
+                            </p>
+                            <a href="" class="arrow arrow_left"></a>
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <span class="iconfont icon-shoucang"></span>
+                                            <p>美豆抽奖</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="iconfont icon-lingquanzhongxin"></span>
+                                            <p>退换货保障</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="iconfont icon-zhuanxiangdijia"></span>
+                                            <p>价格保护</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="" class="arrow arrow_right"></a>
+                        </section>
+                    </div>
+                </li>
+                <li class="login">
+                    <a href="" class="first">登陆</a>
+                    <a href="" class="active second">
+                        注册有礼
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="right clearfix">
+                <li>
+                    <a href="">我的订单</a>
+                </li>
+                <li class="arrow">
+                    <a href="">
+                        我的国美
+                    </a>
+                    <i></i>
+
+                    <!-- 我的国美隐藏的box -->
+                    <div class="mygome-dropdown dropdown"></div>
+                </li>
+                <li class="arrow">
+                    <a href="">
+                        企业采购
+                    </a>
+                    <i></i>
+
+                    <!-- 企业采购隐藏的box -->
+                    <div class="company-dropdown dropdown"></div>
+                </li>
+                <li class="arrow">
+                    <span class="iconfont icon-kefu"></span>
+                    <a href="">
+                        服务中心
+                    </a>
+                    <i></i>
+                    
+                    <!-- 服务中心隐藏的box -->
+                    <div class="serve-dropdown dropdown"></div>
+                </li>
+                <li class="arrow">
+                    <a href="">
+                        网站导航
+                    </a>
+                    <i></i>
+
+                    <!-- 网站导航隐藏的box -->
+                    <div class="website-dropdown dropdown"></div>
+                </li>
+                <li class="arrow">
+                    <span class="iconfont icon-phone"></span>
+                    <a href="">
+                        手机国美
+                    </a>
+                    <i></i>
+
+                    <!-- 手机国美隐藏的box -->
+                    <div class="phone-dropdown dropdown"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="search center">
+        <div class="logo">
+            <a href=""></a>
+        </div>
+        <div class="logo-gif">
+            <a href=""></a>
+        </div>
+        <form action="" class="tosearch">
+            <!-- 搜索栏隐藏的盒子 -->
+            <div class="search_hide">
+                <a href="">商品</a>
+                <a href="">店铺</a>  
+            </div>
+            <p>
+                <label for="">商品</label>
+                <input type="text" name="" id="" placeholder="海尔冰箱">
+                <button>
+                    <span class="iconfont icon-maikefeng"></span>
+                    搜 索
+                </button>
+            </p>
+            <ul>
+                <li>海尔冰箱</li>
+                <li>美的空调自营</li>
+                <li>华为手机</li>
+                <li>全自动洗衣机</li>
+                <li>月饼礼盒</li>
+                <li>APple新品抢购</li>
+            </ul>
+        </form>
+
+        <div class="shopcartbox">
+            <span class="iconfont icon-3
+            "></span>
+            <span class="count">购物车空了</span>
+        </div>
+    </div>
+
+    <!-- 菜单栏 -->
+    <div class="menu">
+        <div class="center clearfix">
+            <h2>
+                <a href="">全部商品分类</a>
+                <!-- <span></span> -->
+            </h2>
+
+            <ul class="clearfix">
+                <li>
+                    <a href="">首页</a>
+                </li>
+                <li>
+                    <a href="">发现</a>
+                </li>
+                <li>
+                    <a href="" class="third">真划算</a>
+                </li>
+                <li>
+                    <a href="">超市</a>
+                </li>
+                <li>
+                    <a href="">电器城</a>
+                </li>
+                <li>
+                    <a href="">汽车</a>
+                </li>
+                <li>
+                    <a href="" class="seventh">家居家装</a>
+                </li>
+                <li>
+                    <a href="">智能</a>
+                </li>
+                <li>
+                    <a href="">管家</a>
+                </li>
+                <li>
+                    <a href="">金融</a>
+                </li>
+            </ul>
+
+            <div class="wrap"></div>
+        </div>
+    </div>
+
+    <!-- 排序按钮 -->
+    <p class="btnlist">
+        <button>默认排序</button>
+        <button>升序排序</button>
+        <button>降序排序</button>
+    </p>
+    
+    <!-- 列表主体 -->
+    <div class="list clearfix">
+        <ul>
+            
+        </ul>
+    </div>
+
+    <!-- 分页的结构 -->
+    <div class="pagelist">
+        <div class="m-style page">
+        </div>
+    </div>
+
+    <!-- 页尾 -->
+    <footer>
+        <div class="center">
+            <section class="top">
+                <span>
+                    <i></i>
+                    <p>
+                        <strong>门店服务</strong>
+                        <a href="">国美门店全国共计2000余家</a>
+                    </p>
+                </span>
+                <span>
+                    <i></i>
+                    <p>
+                        <strong>用户体验</strong>
+                        <a href="">参与用户体验改进计划</a>
+                        <a href="">用户反馈</a>
+                    </p>
+                </span>
+
+                <ul class="clearfix">
+                    <li>
+                        <a href="">国美控股集团</a>
+                    </li>
+                    <li>
+                        <a href="">国美管家</a>
+                    </li>
+                    <li>
+                        <a href="">关于国美</a>
+                    </li>
+                    <li>
+                        <a href="">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="">品牌大全</a>
+                    </li>
+                    <li>
+                        <a href="">商品专题</a>
+                    </li>
+                    <li>
+                        <a href="">商品词</a>
+                    </li>
+                    <li>
+                        <a href="">热词搜索</a>
+                    </li>
+                    <li>
+                        <a href="">友情链接</a>
+                    </li>
+                    <li>
+                        <a href="">风险监测</a>
+                    </li>
+                    <li>
+                        <a href="">销售联盟</a>
+                    </li>
+                    <li>
+                        <a href="">商家入驻</a>
+                    </li>
+                    <li>
+                        <a href="">国美分销</a>
+                    </li>
+                </ul>
+
+                <p>
+                    本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-39900132&nbsp;&nbsp;
+                    <a href="">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+                </p>
+                <p>
+                    网络食品销售第三方平台提供者备案：沪网食备A0015号&nbsp;&nbsp;
+                    <a href="">网络文化经营许可证沪网文[2017]5537-436号</a>&nbsp;&nbsp;
+                    <a href="">增值电信业务经营许可证</a>
+                </p>
+                <p>
+                    客服电话:4008113333&nbsp;&nbsp;
+                    <a href="">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;
+                    <a href="">京B2-20191290</a>&nbsp;&nbsp;
+                    <a href="">经营执照</a>&nbsp;&nbsp;
+                    <a href="">营业执照</a>&nbsp;&nbsp;
+                    <a href="">出版物经营许可证</a>
+                </p>
+                <p>
+                    ©2000-2020&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;
+                    <a href="">
+                        <i></i>
+                        京公网安备 11010502038379号
+                    </a>
+                </p>
+
+                <div class="qrcode-section">
+                    <span class="sm wx">
+                        <i></i>
+                        <p>公众号</p>
+                    </span>
+                    <span class="sm phone">
+                        <i></i>
+                        <p>手机站点</p>
+                    </span>
+                    <span class="big">
+                        <i></i>
+                        <p>扫描下载客户端</p>
+                    </span>
+                </div>
+            </section>
+            <section class="bottom">
+                <a href="">
+                    <i></i>
+                    <p>经营性网站备案信息</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>可信网站信用评价</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>诚信网站</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>朝阳网络警察</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>网购大家评</p>
+                </a>
+                <a href="" class="big">
+                    <i></i>
+                    <p>上海市互联网违法和不良信息举报中心</p>
+                </a>
+                <a href="">
+                    <i></i>
+                    <p>网上有害信息举报专区</p>
+                </a>
+            </section>
+        </div>
+    </footer>
 </body>
 
 </html>

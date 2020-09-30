@@ -140,6 +140,19 @@
             z-index: 999;
         }
 
+        //服务中心隐藏的box
+        .serve-dropdown{
+            width: 200px;
+            height: 200px;
+            background: darkgray;
+            border: 1px solid #e6e6e6;
+            position: absolute;
+            top: 30px;
+            left: -1px;
+            display: none;
+            z-index: 999;
+        }
+
         //网站导航隐藏的box
         .website-dropdown{
             width: 1198px;
@@ -155,7 +168,7 @@
 
         //手机国美隐藏的box
         .phone-dropdown{
-            width: 130px;
+            width: 200px;
             height: 200px;
             background: darkgray;
             border: 1px solid #e6e6e6;
