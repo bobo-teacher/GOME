@@ -510,6 +510,71 @@ header {
     height: 430px;
     margin-top: 10px;
     background: white; }
+    .banner .right .news {
+      height: 146px;
+      margin: 0 15px;
+      border-bottom: 1px dashed #ccc; }
+    .banner .right h3 {
+      font-size: 14px;
+      float: left;
+      color: #333;
+      margin-top: 12px;
+      font-weight: 400;
+      line-height: 21px; }
+    .banner .right .news_header a {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 13px;
+      color: #888;
+      float: right; }
+    .banner .right .news_header i {
+      width: 5px;
+      height: 9px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) -126px -130px no-repeat;
+      display: inline-block;
+      margin-left: 4px; }
+    .banner .right .news_header a:hover {
+      color: #f5004b; }
+    .banner .right .news li {
+      height: 26px;
+      font-size: 12px;
+      line-height: 26px; }
+      .banner .right .news li a:hover {
+        color: #f5004b; }
+      .banner .right .news li a {
+        color: #888; }
+      .banner .right .news li span {
+        display: inline-block;
+        margin-right: 7px; }
+    .banner .right .server_box ul {
+      padding-left: 15px; }
+    .banner .right .server_box li:nth-child(3n) {
+      margin-right: 0; }
+    .banner .right .server_box li {
+      float: left;
+      text-align: center;
+      width: 55px;
+      margin-right: 29px; }
+      .banner .right .server_box li span {
+        margin: 9px 0;
+        display: inline-block;
+        font-size: 32px;
+        color: #373737; }
+      .banner .right .server_box li p {
+        color: #5e5e5e;
+        font-size: 12px;
+        line-height: 20px; }
+    .banner .right .server_box li:hover span, .banner .right .server_box li:hover p {
+      color: #f5004b; }
+    .banner .right .pic {
+      position: relative; }
+      .banner .right .pic .title_box {
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px; }
 
 main .center {
   padding-top: 20px; }
@@ -596,7 +661,7 @@ main .everyday {
       float: right; }
 main .bargains {
   height: 481px; }
-  main .bargains section {
+  main .bargains .picbox {
     border: 1px solid #e6e6e6; }
   main .bargains h2 {
     width: 70px;
@@ -614,8 +679,8 @@ main .bargains {
   main .bargains .header {
     overflow: hidden; }
   main .bargains .bargains_l, main .bargains .bargains_c {
-    width: 420px;
-    margin-right: 10px;
+    width: 422px;
+    margin-right: 8px;
     float: left; }
     main .bargains .bargains_l .pic_l, main .bargains .bargains_c .pic_l {
       float: left; }
@@ -631,7 +696,7 @@ main .bargains {
       main .bargains .bargains_l .pic_r .top, main .bargains .bargains_c .pic_r .top {
         border-bottom: 1px dashed #eee; }
   main .bargains .bargains_r {
-    width: 334px;
+    width: 336px;
     float: left; }
     main .bargains .bargains_r .pic_l {
       float: left;
@@ -651,9 +716,95 @@ main .bargains {
     background-position: -169px -132px; }
   main .bargains .bargains_r h2 {
     background-position: -169px -164px; }
+main .coupon {
+  margin-top: 20px; }
+  main .coupon li {
+    float: left;
+    height: 110px; }
+  main .coupon .m_a {
+    display: inline-block;
+    border-right: 1px dashed #ddd;
+    width: 207px;
+    overflow: hidden; }
+    main .coupon .m_a img {
+      margin-left: -1px; }
+  main .coupon .last_m_a {
+    border: 0; }
 main .youlike {
-  height: 326px;
-  background: darkgray; }
+  height: 326px; }
+  main .youlike .ch {
+    font-size: 18px;
+    line-height: 27px;
+    color: #333;
+    margin-top: 28px;
+    font-weight: 400;
+    float: left; }
+  main .youlike .en {
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ccc;
+    padding: 27px 0 0 9px;
+    font-weight: 400; }
+  main .youlike .arrow_box {
+    margin-top: 30px;
+    float: right; }
+  main .youlike span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    cursor: pointer;
+    color: #666;
+    border-radius: 50px;
+    border: 1px solid #ccc; }
+  main .youlike span:hover {
+    color: #f5004b; }
+  main .youlike .youlike_main {
+    width: 1198px;
+    height: 264px;
+    border: 1px solid #eee;
+    position: relative; }
+  main .youlike .youlike_main ul {
+    margin-right: -2px;
+    position: absolute;
+    opacity: 0; }
+  main .youlike .youlike_main .active {
+    opacity: 1; }
+  main .youlike .youlike_main li {
+    width: 200px;
+    height: 224px;
+    margin-top: 20px;
+    float: left; }
+  main .youlike .youlike_main li:hover .title {
+    color: #f5004b; }
+  main .youlike .youlike_main a {
+    display: inline-block;
+    width: 199px;
+    height: 210px;
+    border-right: 1px dashed #eee;
+    padding-top: 15px; }
+    main .youlike .youlike_main a img {
+      margin-left: 40px;
+      width: 120px;
+      height: 120px; }
+    main .youlike .youlike_main a .title {
+      width: 167px;
+      height: 36px;
+      overflow: hidden;
+      margin: 32px 0 0 20px;
+      color: #5e5e5e;
+      font-size: 12px;
+      line-height: 18px; }
+    main .youlike .youlike_main a .price {
+      color: #f5004b;
+      line-height: 16px;
+      height: 16px;
+      margin: 8px 0 0 20px;
+      font-size: 16px; }
+  main .youlike .youlike_main .last_a {
+    border: 0; }
 main .oneF {
   height: 541px; }
   main .oneF .header {
@@ -676,20 +827,61 @@ main .oneF {
         text-align: center;
         color: #5e5e5e;
         line-height: 30px; }
+    main .oneF .header .active {
+      background: #719ef7; }
+      main .oneF .header .active a {
+        color: white; }
   main .oneF .bottom section {
     float: left; }
   main .oneF .bottom .oneF_l {
     width: 210px;
-    height: 470px;
-    background: chartreuse; }
+    height: 470px; }
+    main .oneF .bottom .oneF_l a:hover {
+      text-decoration: underline; }
+    main .oneF .bottom .oneF_l img {
+      margin-left: -10px; }
+    main .oneF .bottom .oneF_l .middle ul {
+      padding: 0 15px;
+      background: #6294f6;
+      width: 180px; }
+    main .oneF .bottom .oneF_l .middle li {
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      color: white; }
+    main .oneF .bottom .oneF_l .middle a {
+      color: white; }
+    main .oneF .bottom .oneF_l .bottom {
+      width: 210px;
+      height: 160px;
+      background: #719ef7; }
+    main .oneF .bottom .oneF_l .bottom ul {
+      float: left; }
+    main .oneF .bottom .oneF_l .bottom a {
+      font-size: 12px;
+      line-height: 28px;
+      color: white; }
+    main .oneF .bottom .oneF_l .bottom .l {
+      margin: 8px 0 15px 15px; }
+    main .oneF .bottom .oneF_l .bottom .c {
+      margin: 8px 0 15px 10px; }
+    main .oneF .bottom .oneF_l .bottom .r {
+      margin: 8px 15px 15px 10px; }
   main .oneF .bottom .oneF_r {
-    width: 990px; }
+    width: 990px;
+    height: 470px;
+    position: relative; }
+    main .oneF .bottom .oneF_r ul {
+      display: none;
+      position: absolute; }
     main .oneF .bottom .oneF_r li {
       float: left;
       width: 197px;
       height: 234px;
       border-right: 1px solid #eee;
       border-bottom: 1px solid #eee; }
+    main .oneF .bottom .oneF_r li:hover .title {
+      color: #f5004b; }
     main .oneF .bottom .oneF_r img {
       width: 130px;
       height: 130px;
@@ -709,30 +901,823 @@ main .oneF {
     main .oneF .bottom .oneF_r .price {
       height: 20px;
       line-height: 26px;
-      color: #ff0027;
+      color: #f5004b;
       font-size: 14px;
       margin-left: 20px; }
+    main .oneF .bottom .oneF_r .next {
+      width: 30px;
+      height: 60px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -84px -74px;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      right: 0;
+      z-index: 999;
+      background-color: black;
+      opacity: 0.3;
+      display: none; }
+    main .oneF .bottom .oneF_r .next:hover {
+      opacity: 0.5; }
+  main .oneF .bottom .oneF_r:hover .next {
+    display: block; }
 main .twoF {
-  height: 541px;
-  background: orange; }
+  height: 541px; }
+  main .twoF .header {
+    border-bottom: 1px solid #719ef7; }
+    main .twoF .header h2 {
+      width: 210px;
+      float: left;
+      font-size: 20px;
+      line-height: 38px; }
+    main .twoF .header .tab {
+      float: right;
+      margin-top: 8px; }
+      main .twoF .header .tab li {
+        float: left; }
+      main .twoF .header .tab a {
+        display: inline-block;
+        width: 56px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #5e5e5e;
+        line-height: 30px; }
+    main .twoF .header .active {
+      background: #719ef7; }
+      main .twoF .header .active a {
+        color: white; }
+  main .twoF .bottom section {
+    float: left; }
+  main .twoF .bottom .oneF_l {
+    width: 210px;
+    height: 470px; }
+    main .twoF .bottom .oneF_l a:hover {
+      text-decoration: underline; }
+    main .twoF .bottom .oneF_l img {
+      margin-left: -10px; }
+    main .twoF .bottom .oneF_l .middle ul {
+      padding: 0 15px;
+      background: #6294f6;
+      width: 180px; }
+    main .twoF .bottom .oneF_l .middle li {
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      color: white; }
+    main .twoF .bottom .oneF_l .middle a {
+      color: white; }
+    main .twoF .bottom .oneF_l .bottom {
+      width: 210px;
+      height: 160px;
+      background: #719ef7; }
+    main .twoF .bottom .oneF_l .bottom ul {
+      float: left; }
+    main .twoF .bottom .oneF_l .bottom a {
+      font-size: 12px;
+      line-height: 28px;
+      color: white; }
+    main .twoF .bottom .oneF_l .bottom .l {
+      margin: 8px 0 15px 15px; }
+    main .twoF .bottom .oneF_l .bottom .c {
+      margin: 8px 0 15px 10px; }
+    main .twoF .bottom .oneF_l .bottom .r {
+      margin: 8px 15px 15px 10px; }
+  main .twoF .bottom .oneF_r {
+    width: 990px;
+    height: 470px;
+    position: relative; }
+    main .twoF .bottom .oneF_r ul {
+      display: none;
+      position: absolute; }
+    main .twoF .bottom .oneF_r li {
+      float: left;
+      width: 197px;
+      height: 234px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    main .twoF .bottom .oneF_r li:hover .title {
+      color: #f5004b; }
+    main .twoF .bottom .oneF_r img {
+      width: 130px;
+      height: 130px;
+      margin: 20px 0 15px 34px; }
+    main .twoF .bottom .oneF_r .title {
+      width: 157px;
+      height: 36px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #5e5e5e;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    main .twoF .bottom .oneF_r .price {
+      height: 20px;
+      line-height: 26px;
+      color: #f5004b;
+      font-size: 14px;
+      margin-left: 20px; }
+    main .twoF .bottom .oneF_r .next {
+      width: 30px;
+      height: 60px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -84px -74px;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      right: 0;
+      z-index: 999;
+      background-color: black;
+      opacity: 0.3;
+      display: none; }
+    main .twoF .bottom .oneF_r .next:hover {
+      opacity: 0.5; }
+  main .twoF .bottom .oneF_r:hover .next {
+    display: block; }
 main .threeF {
-  height: 541px;
-  background: yellow; }
+  height: 541px; }
+  main .threeF .header {
+    border-bottom: 1px solid #719ef7; }
+    main .threeF .header h2 {
+      width: 210px;
+      float: left;
+      font-size: 20px;
+      line-height: 38px; }
+    main .threeF .header .tab {
+      float: right;
+      margin-top: 8px; }
+      main .threeF .header .tab li {
+        float: left; }
+      main .threeF .header .tab a {
+        display: inline-block;
+        width: 56px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #5e5e5e;
+        line-height: 30px; }
+    main .threeF .header .active {
+      background: #719ef7; }
+      main .threeF .header .active a {
+        color: white; }
+  main .threeF .bottom section {
+    float: left; }
+  main .threeF .bottom .oneF_l {
+    width: 210px;
+    height: 470px; }
+    main .threeF .bottom .oneF_l a:hover {
+      text-decoration: underline; }
+    main .threeF .bottom .oneF_l img {
+      margin-left: -10px; }
+    main .threeF .bottom .oneF_l .middle ul {
+      padding: 0 15px;
+      background: #6294f6;
+      width: 180px; }
+    main .threeF .bottom .oneF_l .middle li {
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      color: white; }
+    main .threeF .bottom .oneF_l .middle a {
+      color: white; }
+    main .threeF .bottom .oneF_l .bottom {
+      width: 210px;
+      height: 160px;
+      background: #719ef7; }
+    main .threeF .bottom .oneF_l .bottom ul {
+      float: left; }
+    main .threeF .bottom .oneF_l .bottom a {
+      font-size: 12px;
+      line-height: 28px;
+      color: white; }
+    main .threeF .bottom .oneF_l .bottom .l {
+      margin: 8px 0 15px 15px; }
+    main .threeF .bottom .oneF_l .bottom .c {
+      margin: 8px 0 15px 10px; }
+    main .threeF .bottom .oneF_l .bottom .r {
+      margin: 8px 15px 15px 10px; }
+  main .threeF .bottom .oneF_r {
+    width: 990px;
+    height: 470px;
+    position: relative; }
+    main .threeF .bottom .oneF_r ul {
+      display: none;
+      position: absolute; }
+    main .threeF .bottom .oneF_r li {
+      float: left;
+      width: 197px;
+      height: 234px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    main .threeF .bottom .oneF_r li:hover .title {
+      color: #f5004b; }
+    main .threeF .bottom .oneF_r img {
+      width: 130px;
+      height: 130px;
+      margin: 20px 0 15px 34px; }
+    main .threeF .bottom .oneF_r .title {
+      width: 157px;
+      height: 36px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #5e5e5e;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    main .threeF .bottom .oneF_r .price {
+      height: 20px;
+      line-height: 26px;
+      color: #f5004b;
+      font-size: 14px;
+      margin-left: 20px; }
+    main .threeF .bottom .oneF_r .next {
+      width: 30px;
+      height: 60px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -84px -74px;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      right: 0;
+      z-index: 999;
+      background-color: black;
+      opacity: 0.3;
+      display: none; }
+    main .threeF .bottom .oneF_r .next:hover {
+      opacity: 0.5; }
+  main .threeF .bottom .oneF_r:hover .next {
+    display: block; }
 main .fourF {
-  height: 541px;
-  background: green; }
+  height: 541px; }
+  main .fourF .header {
+    border-bottom: 1px solid #719ef7; }
+    main .fourF .header h2 {
+      width: 210px;
+      float: left;
+      font-size: 20px;
+      line-height: 38px; }
+    main .fourF .header .tab {
+      float: right;
+      margin-top: 8px; }
+      main .fourF .header .tab li {
+        float: left; }
+      main .fourF .header .tab a {
+        display: inline-block;
+        width: 56px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #5e5e5e;
+        line-height: 30px; }
+    main .fourF .header .active {
+      background: #719ef7; }
+      main .fourF .header .active a {
+        color: white; }
+  main .fourF .bottom section {
+    float: left; }
+  main .fourF .bottom .oneF_l {
+    width: 210px;
+    height: 470px; }
+    main .fourF .bottom .oneF_l a:hover {
+      text-decoration: underline; }
+    main .fourF .bottom .oneF_l img {
+      margin-left: -10px; }
+    main .fourF .bottom .oneF_l .middle ul {
+      padding: 0 15px;
+      background: #6294f6;
+      width: 180px; }
+    main .fourF .bottom .oneF_l .middle li {
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      color: white; }
+    main .fourF .bottom .oneF_l .middle a {
+      color: white; }
+    main .fourF .bottom .oneF_l .bottom {
+      width: 210px;
+      height: 160px;
+      background: #719ef7; }
+    main .fourF .bottom .oneF_l .bottom ul {
+      float: left; }
+    main .fourF .bottom .oneF_l .bottom a {
+      font-size: 12px;
+      line-height: 28px;
+      color: white; }
+    main .fourF .bottom .oneF_l .bottom .l {
+      margin: 8px 0 15px 15px; }
+    main .fourF .bottom .oneF_l .bottom .c {
+      margin: 8px 0 15px 10px; }
+    main .fourF .bottom .oneF_l .bottom .r {
+      margin: 8px 15px 15px 10px; }
+  main .fourF .bottom .oneF_r {
+    width: 990px;
+    height: 470px;
+    position: relative; }
+    main .fourF .bottom .oneF_r ul {
+      display: none;
+      position: absolute; }
+    main .fourF .bottom .oneF_r li {
+      float: left;
+      width: 197px;
+      height: 234px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    main .fourF .bottom .oneF_r li:hover .title {
+      color: #f5004b; }
+    main .fourF .bottom .oneF_r img {
+      width: 130px;
+      height: 130px;
+      margin: 20px 0 15px 34px; }
+    main .fourF .bottom .oneF_r .title {
+      width: 157px;
+      height: 36px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #5e5e5e;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    main .fourF .bottom .oneF_r .price {
+      height: 20px;
+      line-height: 26px;
+      color: #f5004b;
+      font-size: 14px;
+      margin-left: 20px; }
+    main .fourF .bottom .oneF_r .next {
+      width: 30px;
+      height: 60px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -84px -74px;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      right: 0;
+      z-index: 999;
+      background-color: black;
+      opacity: 0.3;
+      display: none; }
+    main .fourF .bottom .oneF_r .next:hover {
+      opacity: 0.5; }
+  main .fourF .bottom .oneF_r:hover .next {
+    display: block; }
 main .fiveF {
-  height: 541px;
-  background: skyblue; }
+  height: 541px; }
+  main .fiveF .header {
+    border-bottom: 1px solid #719ef7; }
+    main .fiveF .header h2 {
+      width: 210px;
+      float: left;
+      font-size: 20px;
+      line-height: 38px; }
+    main .fiveF .header .tab {
+      float: right;
+      margin-top: 8px; }
+      main .fiveF .header .tab li {
+        float: left; }
+      main .fiveF .header .tab a {
+        display: inline-block;
+        width: 56px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #5e5e5e;
+        line-height: 30px; }
+    main .fiveF .header .active {
+      background: #719ef7; }
+      main .fiveF .header .active a {
+        color: white; }
+  main .fiveF .bottom section {
+    float: left; }
+  main .fiveF .bottom .oneF_l {
+    width: 210px;
+    height: 470px; }
+    main .fiveF .bottom .oneF_l a:hover {
+      text-decoration: underline; }
+    main .fiveF .bottom .oneF_l img {
+      margin-left: -10px; }
+    main .fiveF .bottom .oneF_l .middle ul {
+      padding: 0 15px;
+      background: #6294f6;
+      width: 180px; }
+    main .fiveF .bottom .oneF_l .middle li {
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      color: white; }
+    main .fiveF .bottom .oneF_l .middle a {
+      color: white; }
+    main .fiveF .bottom .oneF_l .bottom {
+      width: 210px;
+      height: 160px;
+      background: #719ef7; }
+    main .fiveF .bottom .oneF_l .bottom ul {
+      float: left; }
+    main .fiveF .bottom .oneF_l .bottom a {
+      font-size: 12px;
+      line-height: 28px;
+      color: white; }
+    main .fiveF .bottom .oneF_l .bottom .l {
+      margin: 8px 0 15px 15px; }
+    main .fiveF .bottom .oneF_l .bottom .c {
+      margin: 8px 0 15px 10px; }
+    main .fiveF .bottom .oneF_l .bottom .r {
+      margin: 8px 15px 15px 10px; }
+  main .fiveF .bottom .oneF_r {
+    width: 990px;
+    height: 470px;
+    position: relative; }
+    main .fiveF .bottom .oneF_r ul {
+      display: none;
+      position: absolute; }
+    main .fiveF .bottom .oneF_r li {
+      float: left;
+      width: 197px;
+      height: 234px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    main .fiveF .bottom .oneF_r li:hover .title {
+      color: #f5004b; }
+    main .fiveF .bottom .oneF_r img {
+      width: 130px;
+      height: 130px;
+      margin: 20px 0 15px 34px; }
+    main .fiveF .bottom .oneF_r .title {
+      width: 157px;
+      height: 36px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #5e5e5e;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    main .fiveF .bottom .oneF_r .price {
+      height: 20px;
+      line-height: 26px;
+      color: #f5004b;
+      font-size: 14px;
+      margin-left: 20px; }
+    main .fiveF .bottom .oneF_r .next {
+      width: 30px;
+      height: 60px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -84px -74px;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      right: 0;
+      z-index: 999;
+      background-color: black;
+      opacity: 0.3;
+      display: none; }
+    main .fiveF .bottom .oneF_r .next:hover {
+      opacity: 0.5; }
+  main .fiveF .bottom .oneF_r:hover .next {
+    display: block; }
 main .sixF {
-  height: 541px;
-  background: blue; }
+  height: 541px; }
+  main .sixF .header {
+    border-bottom: 1px solid #719ef7; }
+    main .sixF .header h2 {
+      width: 210px;
+      float: left;
+      font-size: 20px;
+      line-height: 38px; }
+    main .sixF .header .tab {
+      float: right;
+      margin-top: 8px; }
+      main .sixF .header .tab li {
+        float: left; }
+      main .sixF .header .tab a {
+        display: inline-block;
+        width: 56px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #5e5e5e;
+        line-height: 30px; }
+    main .sixF .header .active {
+      background: #719ef7; }
+      main .sixF .header .active a {
+        color: white; }
+  main .sixF .bottom section {
+    float: left; }
+  main .sixF .bottom .oneF_l {
+    width: 210px;
+    height: 470px; }
+    main .sixF .bottom .oneF_l a:hover {
+      text-decoration: underline; }
+    main .sixF .bottom .oneF_l img {
+      margin-left: -10px; }
+    main .sixF .bottom .oneF_l .middle ul {
+      padding: 0 15px;
+      background: #6294f6;
+      width: 180px; }
+    main .sixF .bottom .oneF_l .middle li {
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      color: white; }
+    main .sixF .bottom .oneF_l .middle a {
+      color: white; }
+    main .sixF .bottom .oneF_l .bottom {
+      width: 210px;
+      height: 160px;
+      background: #719ef7; }
+    main .sixF .bottom .oneF_l .bottom ul {
+      float: left; }
+    main .sixF .bottom .oneF_l .bottom a {
+      font-size: 12px;
+      line-height: 28px;
+      color: white; }
+    main .sixF .bottom .oneF_l .bottom .l {
+      margin: 8px 0 15px 15px; }
+    main .sixF .bottom .oneF_l .bottom .c {
+      margin: 8px 0 15px 10px; }
+    main .sixF .bottom .oneF_l .bottom .r {
+      margin: 8px 15px 15px 10px; }
+  main .sixF .bottom .oneF_r {
+    width: 990px;
+    height: 470px;
+    position: relative; }
+    main .sixF .bottom .oneF_r ul {
+      display: none;
+      position: absolute; }
+    main .sixF .bottom .oneF_r li {
+      float: left;
+      width: 197px;
+      height: 234px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    main .sixF .bottom .oneF_r li:hover .title {
+      color: #f5004b; }
+    main .sixF .bottom .oneF_r img {
+      width: 130px;
+      height: 130px;
+      margin: 20px 0 15px 34px; }
+    main .sixF .bottom .oneF_r .title {
+      width: 157px;
+      height: 36px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #5e5e5e;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    main .sixF .bottom .oneF_r .price {
+      height: 20px;
+      line-height: 26px;
+      color: #f5004b;
+      font-size: 14px;
+      margin-left: 20px; }
+    main .sixF .bottom .oneF_r .next {
+      width: 30px;
+      height: 60px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -84px -74px;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      right: 0;
+      z-index: 999;
+      background-color: black;
+      opacity: 0.3;
+      display: none; }
+    main .sixF .bottom .oneF_r .next:hover {
+      opacity: 0.5; }
+  main .sixF .bottom .oneF_r:hover .next {
+    display: block; }
 main .sevenF {
-  height: 541px;
-  background: purple; }
+  height: 541px; }
+  main .sevenF .header {
+    border-bottom: 1px solid #719ef7; }
+    main .sevenF .header h2 {
+      width: 210px;
+      float: left;
+      font-size: 20px;
+      line-height: 38px; }
+    main .sevenF .header .tab {
+      float: right;
+      margin-top: 8px; }
+      main .sevenF .header .tab li {
+        float: left; }
+      main .sevenF .header .tab a {
+        display: inline-block;
+        width: 56px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #5e5e5e;
+        line-height: 30px; }
+    main .sevenF .header .active {
+      background: #719ef7; }
+      main .sevenF .header .active a {
+        color: white; }
+  main .sevenF .bottom section {
+    float: left; }
+  main .sevenF .bottom .oneF_l {
+    width: 210px;
+    height: 470px; }
+    main .sevenF .bottom .oneF_l a:hover {
+      text-decoration: underline; }
+    main .sevenF .bottom .oneF_l img {
+      margin-left: -10px; }
+    main .sevenF .bottom .oneF_l .middle ul {
+      padding: 0 15px;
+      background: #6294f6;
+      width: 180px; }
+    main .sevenF .bottom .oneF_l .middle li {
+      float: left;
+      font-size: 14px;
+      line-height: 32px;
+      color: white; }
+    main .sevenF .bottom .oneF_l .middle a {
+      color: white; }
+    main .sevenF .bottom .oneF_l .bottom {
+      width: 210px;
+      height: 160px;
+      background: #719ef7; }
+    main .sevenF .bottom .oneF_l .bottom ul {
+      float: left; }
+    main .sevenF .bottom .oneF_l .bottom a {
+      font-size: 12px;
+      line-height: 28px;
+      color: white; }
+    main .sevenF .bottom .oneF_l .bottom .l {
+      margin: 8px 0 15px 15px; }
+    main .sevenF .bottom .oneF_l .bottom .c {
+      margin: 8px 0 15px 10px; }
+    main .sevenF .bottom .oneF_l .bottom .r {
+      margin: 8px 15px 15px 10px; }
+  main .sevenF .bottom .oneF_r {
+    width: 990px;
+    height: 470px;
+    position: relative; }
+    main .sevenF .bottom .oneF_r ul {
+      display: none;
+      position: absolute; }
+    main .sevenF .bottom .oneF_r li {
+      float: left;
+      width: 197px;
+      height: 234px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    main .sevenF .bottom .oneF_r li:hover .title {
+      color: #f5004b; }
+    main .sevenF .bottom .oneF_r img {
+      width: 130px;
+      height: 130px;
+      margin: 20px 0 15px 34px; }
+    main .sevenF .bottom .oneF_r .title {
+      width: 157px;
+      height: 36px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #5e5e5e;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    main .sevenF .bottom .oneF_r .price {
+      height: 20px;
+      line-height: 26px;
+      color: #f5004b;
+      font-size: 14px;
+      margin-left: 20px; }
+    main .sevenF .bottom .oneF_r .next {
+      width: 30px;
+      height: 60px;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -84px -74px;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      right: 0;
+      z-index: 999;
+      background-color: black;
+      opacity: 0.3;
+      display: none; }
+    main .sevenF .bottom .oneF_r .next:hover {
+      opacity: 0.5; }
+  main .sevenF .bottom .oneF_r:hover .next {
+    display: block; }
 main .hot {
-  height: 400px;
-  background: rosybrown; }
+  height: 400px; }
+  main .hot .hot_l {
+    width: 830px;
+    float: left; }
+  main .hot .hot_header {
+    height: 60px;
+    overflow: hidden; }
+    main .hot .hot_header a {
+      float: right;
+      padding-top: 33px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #5e5e5e; }
+      main .hot .hot_header a i {
+        font-style: normal; }
+      main .hot .hot_header a i:hover {
+        color: #f5004b; }
+      main .hot .hot_header a .arrow {
+        width: 10px;
+        height: 14px;
+        display: inline-block;
+        background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -123px -126px;
+        margin-left: 3px; }
+  main .hot h3 {
+    float: left; }
+  main .hot .ch {
+    font-size: 18px;
+    color: #333;
+    margin-top: 28px;
+    font-weight: 400;
+    line-height: 27px; }
+  main .hot .en {
+    font-size: 20px;
+    color: #ccc;
+    padding: 27px 0 0 9px;
+    line-height: 30px;
+    font-weight: 400; }
+  main .hot .hot_main {
+    border: 1px solid #eee;
+    width: 828px; }
+  main .hot .hot_main .NO1 {
+    display: block;
+    width: 280px;
+    height: 338px;
+    border-right: 1px solid #eee;
+    float: left;
+    position: relative;
+    text-align: center; }
+    main .hot .hot_main .NO1 img {
+      margin: 30px 0 29px;
+      width: 210px;
+      height: 210px; }
+    main .hot .hot_main .NO1 p {
+      margin-left: 20px;
+      line-height: 24px;
+      font-size: 16px;
+      width: 240px;
+      height: 24px; }
+    main .hot .hot_main .NO1 .title {
+      overflow: hidden;
+      color: #404040; }
+    main .hot .hot_main .NO1 .price {
+      color: #f5004b; }
+    main .hot .hot_main .NO1 span {
+      display: block;
+      width: 72px;
+      height: 72px;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      z-index: 1;
+      background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) no-repeat -52px 0; }
+  main .hot .hot_main .NO1:hover .title {
+    color: #f5004b; }
+  main .hot .other li {
+    width: 274px;
+    height: 168px;
+    border-right: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+    position: relative;
+    float: left;
+    margin-right: -2px; }
+    main .hot .other li img {
+      width: 120px;
+      height: 120px;
+      float: left;
+      margin: 25px 10px 0; }
+    main .hot .other li .detail {
+      float: left; }
+    main .hot .other li .detail_title {
+      font-size: 13px;
+      line-height: 20px;
+      color: #5e5e5e;
+      height: 40px;
+      width: 120px;
+      overflow: hidden;
+      padding-top: 29px; }
+    main .hot .other li .detail_price {
+      line-height: 14px;
+      overflow: hidden;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #f5004b;
+      height: 14px;
+      width: 120px; }
+  main .hot .other li:hover .detail_title {
+    color: #f5004b; }
 main .gome-help {
   height: 222px;
   background: fuchsia; }

@@ -9,7 +9,14 @@ define([], function () {
             // });
 
             $everydayli = $("#everydaylist li");
-            $oneF_ul = $(".oneF_r ul")
+            $youlike_main_li = $(".youlike_main li");
+            $oneF_li = $(".oneF .oneF_r li");
+            $twoF_li = $(".twoF .oneF_r li");
+            $threeF_li = $(".threeF .oneF_r li");
+            $fourF_li = $(".fourF .oneF_r li");
+            $fiveF_li = $(".fiveF .oneF_r li");
+            $sixF_li = $(".sixF .oneF_r li");
+            $sevenF_li = $(".sevenF .oneF_r li");
             $.ajax({
                 url: "http://localhost:8080/fuwuqi/GOME/php/index_everyday_rander.php",
                 dataType: "json"
@@ -21,23 +28,62 @@ define([], function () {
                     $everydayli.eq(index).find(".title").html(value.title);
                 })
 
-                //渲染楼层
-                $randerstr = "";
+                //渲染猜你喜欢
                 $.each(data, function (index, value) {
-                    $randerstr += `
-                    <li>
-                        <a href="">
-                            <img src="${value.url}" alt="">
-                            <p class="title">${value.title}</p>
-                            <p class="price">¥${value.price}</p>
-                        </a>
-                    </li>
-                    `
-                    if (index > 8) {
-                        return false;
-                    }
+                    $youlike_main_li.eq(index).find("img").attr("src", value.url);
+                    $youlike_main_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $youlike_main_li.eq(index).find(".title").html(value.title);
                 })
-                $oneF_ul.html($randerstr)
+
+                //渲染楼层
+                //一楼
+                $.each(data, function (index, value) {
+                    $oneF_li.eq(index).find("img").attr("src", value.url);
+                    $oneF_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $oneF_li.eq(index).find(".title").html(value.title);
+                })
+
+                //二楼
+                $.each(data, function (index, value) {
+                    $twoF_li.eq(index).find("img").attr("src", value.url);
+                    $twoF_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $twoF_li.eq(index).find(".title").html(value.title);
+                })
+
+                //三楼
+                $.each(data, function (index, value) {
+                    $threeF_li.eq(index).find("img").attr("src", value.url);
+                    $threeF_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $threeF_li.eq(index).find(".title").html(value.title);
+                })
+
+                //四楼
+                $.each(data, function (index, value) {
+                    $fourF_li.eq(index).find("img").attr("src", value.url);
+                    $fourF_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $fourF_li.eq(index).find(".title").html(value.title);
+                })
+
+                //五楼
+                $.each(data, function (index, value) {
+                    $fiveF_li.eq(index).find("img").attr("src", value.url);
+                    $fiveF_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $fiveF_li.eq(index).find(".title").html(value.title);
+                })
+
+                //六楼
+                $.each(data, function (index, value) {
+                    $sixF_li.eq(index).find("img").attr("src", value.url);
+                    $sixF_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $sixF_li.eq(index).find(".title").html(value.title);
+                })
+
+                //七楼
+                $.each(data, function (index, value) {
+                    $sevenF_li.eq(index).find("img").attr("src", value.url);
+                    $sevenF_li.eq(index).find(".price").html("¥" + (+value.price).toFixed(2));
+                    $sevenF_li.eq(index).find(".title").html(value.title);
+                })
             })
 
             //关闭广告图
@@ -330,14 +376,14 @@ define([], function () {
                 }, 3000);
             })
 
-            //倒计
+            //倒计时
             lastTime();
             function lastTime() {
-                let $lastDate = new Date(2020, 8, 30, 18, 0, 0);//设置未来时间
+                let $lastDate = new Date(2020,9,5,18,0,0);//设置未来时间
                 let $date = new Date();//获取当前时间
                 let $tolal = parseInt(($lastDate.getTime() - $date.getTime()) / 1000);//距离未来时间的总秒数
                 let $sec = doubleNum($tolal % 60);
-                let $min = doubleNum(parseInt($tolal / 60)) % 60;
+                let $min = doubleNum(parseInt($tolal / 60) % 60);
                 let $hour = doubleNum(parseInt($tolal / 3600) % 24);
                 $("#hour").html($hour);
                 $("#min").html($min);
@@ -354,15 +400,204 @@ define([], function () {
                 }
             }
 
+            //猜你喜欢按钮点击切换商品列表
+            const $youlike_left = $(".youlike .left");
+            const $youlike_right = $(".youlike .right");
+            const $youlike_ul = $(".youlike ul");
+            let $youlike_index = 0;
+            $youlike_right.on("click",function(){
+                $youlike_index++;
+                if($youlike_index == $youlike_ul.length){
+                    $youlike_index = 0;
+                }
+                $youlike_ul.eq($youlike_index).animate({
+                    opacity:1
+                }).siblings().animate({
+                    opacity:0
+                })
+            })
+            $youlike_left.on("click",function(){
+                $youlike_index--;
+                if($youlike_index == -1){
+                    $youlike_index = $youlike_ul.length - 1;
+                }
+                $youlike_ul.eq($youlike_index).animate({
+                    opacity:1
+                }).siblings().animate({
+                    opacity:0
+                })
+            })
+
+            //一楼tab切换
+            $oneF_tab = $(".oneF .tab li");
+            $oneF_ul = $(".oneF .oneF_r ul");
+            $oneF_next = $(".oneF .oneF_r .next");
+            $oneF_index = 0;
+            $oneF_timer = null;
+            $oneF_tab.on("mouseover",function(){
+                clearTimeout($oneF_timer);
+                $oneF_timer = setTimeout(() => {
+                    $oneF_index = $(this).index();
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $oneF_ul.eq($oneF_index).show().siblings().not(".next").hide();
+                }, 300); 
+            })
+            $oneF_next.on("click",function(){
+                $oneF_index++;
+                if($oneF_index == $oneF_ul.length){
+                    $oneF_index = 0;
+                }
+                $oneF_tab.eq($oneF_index).addClass("active").siblings().removeClass("active");
+                $oneF_ul.eq($oneF_index).show().siblings().not(".next").hide();
+            })
+
+            //二楼tab切换
+            $twoF_tab = $(".twoF .tab li");
+            $twoF_ul = $(".twoF .oneF_r ul");
+            $twoF_next = $(".twoF .oneF_r .next");
+            $twoF_index = 0;
+            $twoF_timer = null;
+            $twoF_tab.on("mouseover",function(){
+                clearTimeout($twoF_timer);
+                $twoF_timer = setTimeout(() => {
+                    $twoF_index = $(this).index();
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $twoF_ul.eq($twoF_index).show().siblings().not(".next").hide();
+                }, 300); 
+            })
+            $twoF_next.on("click",function(){
+                $twoF_index++;
+                if($twoF_index == $twoF_ul.length){
+                    $twoF_index = 0;
+                }
+                $twoF_tab.eq($twoF_index).addClass("active").siblings().removeClass("active");
+                $twoF_ul.eq($twoF_index).show().siblings().not(".next").hide();
+            })
+
+            //三楼tab切换
+            $threeF_tab = $(".threeF .tab li");
+            $threeF_ul = $(".threeF .oneF_r ul");
+            $threeF_next = $(".threeF .oneF_r .next");
+            $threeF_index = 0;
+            $threeF_timer = null;
+            $threeF_tab.on("mouseover",function(){
+                clearTimeout($threeF_timer);
+                $threeF_timer = setTimeout(() => {
+                    $threeF_index = $(this).index();
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $threeF_ul.eq($threeF_index).show().siblings().not(".next").hide();
+                }, 300); 
+            })
+            $threeF_next.on("click",function(){
+                $threeF_index++;
+                if($threeF_index == $threeF_ul.length){
+                    $threeF_index = 0;
+                }
+                $threeF_tab.eq($threeF_index).addClass("active").siblings().removeClass("active");
+                $threeF_ul.eq($threeF_index).show().siblings().not(".next").hide();
+            })
+
+            //四楼tab切换
+            $fourF_tab = $(".fourF .tab li");
+            $fourF_ul = $(".fourF .oneF_r ul");
+            $fourF_next = $(".fourF .oneF_r .next");
+            $fourF_index = 0;
+            $fourF_timer = null;
+            $fourF_tab.on("mouseover",function(){
+                clearTimeout($fourF_timer);
+                $fourF_timer = setTimeout(() => {
+                    $fourF_index = $(this).index();
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $fourF_ul.eq($fourF_index).show().siblings().not(".next").hide();
+                }, 300); 
+            })
+            $fourF_next.on("click",function(){
+                $fourF_index++;
+                if($fourF_index == $fourF_ul.length){
+                    $fourF_index = 0;
+                }
+                $fourF_tab.eq($fourF_index).addClass("active").siblings().removeClass("active");
+                $fourF_ul.eq($fourF_index).show().siblings().not(".next").hide();
+            })
+
+            //五楼tab切换
+            $fiveF_tab = $(".fiveF .tab li");
+            $fiveF_ul = $(".fiveF .oneF_r ul");
+            $fiveF_next = $(".fiveF .oneF_r .next");
+            $fiveF_index = 0;
+            $fiveF_timer = null;
+            $fiveF_tab.on("mouseover",function(){
+                clearTimeout($fiveF_timer);
+                $fiveF_timer = setTimeout(() => {
+                    $fiveF_index = $(this).index();
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $fiveF_ul.eq($fiveF_index).show().siblings().not(".next").hide();
+                }, 300); 
+            })
+            $fiveF_next.on("click",function(){
+                $fiveF_index++;
+                if($fiveF_index == $fiveF_ul.length){
+                    $fiveF_index = 0;
+                }
+                $fiveF_tab.eq($fiveF_index).addClass("active").siblings().removeClass("active");
+                $fiveF_ul.eq($fiveF_index).show().siblings().not(".next").hide();
+            })
+
+            //六楼tab切换
+            $sixF_tab = $(".sixF .tab li");
+            $sixF_ul = $(".sixF .oneF_r ul");
+            $sixF_next = $(".sixF .oneF_r .next");
+            $sixF_index = 0;
+            $sixF_timer = null;
+            $sixF_tab.on("mouseover",function(){
+                clearTimeout($sixF_timer);
+                $sixF_timer = setTimeout(() => {
+                    $sixF_index = $(this).index();
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $sixF_ul.eq($sixF_index).show().siblings().not(".next").hide();
+                }, 300); 
+            })
+            $sixF_next.on("click",function(){
+                $sixF_index++;
+                if($sixF_index == $sixF_ul.length){
+                    $sixF_index = 0;
+                }
+                $sixF_tab.eq($sixF_index).addClass("active").siblings().removeClass("active");
+                $sixF_ul.eq($sixF_index).show().siblings().not(".next").hide();
+            })
+
+            //七楼tab切换
+            $sevenF_tab = $(".sevenF .tab li");
+            $sevenF_ul = $(".sevenF .oneF_r ul");
+            $sevenF_next = $(".sevenF .oneF_r .next");
+            $sevenF_index = 0;
+            $sevenF_timer = null;
+            $sevenF_tab.on("mouseover",function(){
+                clearTimeout($sevenF_timer);
+                $sevenF_timer = setTimeout(() => {
+                    $sevenF_index = $(this).index();
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $sevenF_ul.eq($sevenF_index).show().siblings().not(".next").hide();
+                }, 300); 
+            })
+            $sevenF_next.on("click",function(){
+                $sevenF_index++;
+                if($sevenF_index == $sevenF_ul.length){
+                    $sevenF_index = 0;
+                }
+                $sevenF_tab.eq($sevenF_index).addClass("active").siblings().removeClass("active");
+                $sevenF_ul.eq($sevenF_index).show().siblings().not(".next").hide();
+            })
+
             //楼梯效果
             const $louti = $("#elevator");
             const $loutili = $(".louti li");
             const $louceng = $("main .louceng");
             let $top = $(window).scrollTop();
-            $top > 600 && $top < 5500 ? $louti.show() : $louti.hide();
+            $top > 1300 && $top < 5500 ? $louti.show() : $louti.hide();
             $(window).on("scroll", function () {
                 let $top = $(window).scrollTop();
-                $top > 600 && $top < 5500 ? $louti.show() : $louti.hide();
+                $top > 1300 && $top < 5500 ? $louti.show() : $louti.hide();
                 $louceng.each(function (index, element) {
                     let $loucengtop = $(element).offset().top;
                     if ($loucengtop > $top) {

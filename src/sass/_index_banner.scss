@@ -94,5 +94,87 @@
         height: 430px;
         margin-top: 10px;
         background: white;
+        .news{
+            height: 146px;
+            margin: 0 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+        h3{
+            font-size: 14px;
+            float: left;
+            color: #333;
+            margin-top: 12px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+        .news_header a{
+            font-size: 12px;
+            text-align: center;
+            margin-top: 13px;
+            color: #888;
+            float: right;
+        }
+        .news_header i{
+            width: 5px;
+            height: 9px;
+            background: url(https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.7/css/i/ui.png) -126px -130px no-repeat;
+            display: inline-block;
+            margin-left: 4px;
+        }
+        .news_header a:hover{
+            color:$activecolor;
+        }
+        .news li{
+            height: 26px;
+            font-size: 12px;
+            line-height: 26px;
+            a:hover{
+                color:$activecolor;
+            }
+            a{
+                color: #888;
+            }
+            span{
+                display: inline-block;
+                margin-right: 7px;
+            }
+        }
+        .server_box ul{
+            padding-left: 15px;
+        }
+        .server_box li:nth-child(3n){
+            margin-right: 0;
+        }
+        .server_box li{
+            float: left;
+            text-align: center;
+            width: 55px;
+            margin-right: 29px;
+            span{
+                margin: 9px 0;
+                display: inline-block;
+                font-size: 32px;
+                color: #373737;
+            }
+            p{
+                color: #5e5e5e;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+        .server_box li:hover span,.server_box li:hover p{
+            color: $activecolor;
+        }
+        .pic{
+            position: relative;
+            .title_box{
+                position: absolute;
+                top: 14px;
+                left: 15px;
+                color: #fff;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
     }
 }
