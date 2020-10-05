@@ -1434,6 +1434,7 @@ main{//主体
             position: relative;
             float: left;
             margin-right: -2px;
+            overflow: hidden;
             img{
                 width: 120px;
                 height: 120px;
@@ -1461,13 +1462,116 @@ main{//主体
                 height: 14px;
                 width: 120px;
             }
+            b{
+                display: block;
+                width: 70px;
+                height: 77px;
+                position: absolute;
+                right: 10px;
+                top: 39px;
+                font-size: 125px;
+                color: #f9f7f5;
+                font-style: italic;
+            }
         }
         .other li:hover .detail_title{
             color: $activecolor;
         }
-    }
-    .gome-help{
-        height: 222px;
-        background: fuchsia;
+        .hot_r{
+            width: 361px;
+            float: right;
+        }
+        .service_header{
+            height: 60px;
+            overflow: hidden;
+            p{
+                float: right;
+                overflow: hidden;
+            }
+            a,span{
+                display: inline-block;
+                margin-top: 33px;
+                font-size: 12px;
+                line-height: 18px;
+                color: #5e5e5e;
+                i{
+                    font-style: normal;
+                }
+                i:hover{
+                    color: $activecolor;
+                }
+            }
+        }
+        .service_main{
+            width: 359px;
+            height: 338px;
+            border: 1px solid #eee;
+            background: #fcfcfc;
+            li{
+                position: relative;
+            }
+            img{
+                width: 110px;
+                height: 110px;
+                background: #f6f6f6;
+                border-radius: 68px;
+                display: block;
+                margin: 29px 40px 30px 30px;
+                float: left;
+            }
+            .detail{
+                float: left;
+                overflow: hidden;
+            }
+            .detail_title{
+                height: 16px;
+                font-size: 16px;
+                line-height: 16px;
+                margin-top: 24px;
+                color: #404040;
+            }
+            .detail_price{
+                margin-top: 14px;
+                height: 16px;
+                font-size: 16px;
+                line-height: 16px;
+                color: $activecolor;
+                span{
+                    font-size: 12px;
+                    color: #888;
+                } 
+            }
+            .detail_hlep{
+                margin-top: 39px;
+                p{
+                    color: #888;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            .first{
+                border-bottom: 1px dashed #eee;
+            }
+            li:hover .detail_title{
+                color: $activecolor;
+            }
+            .house_ser{
+                width: 56px;
+                overflow: hidden;
+                position: absolute;
+                top: 90px;
+                left: 90px;
+                span{
+                    width: 48px;
+                    padding: 0 4px;
+                    margin-top: 4px;
+                    background: $themecolor;
+                    color: white;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
     }
 }
+

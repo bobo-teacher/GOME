@@ -26,7 +26,7 @@ define(["pagination", "jlazyload"], function () {
                         <p class="evaluate">
                             <a href="">
                                 已有
-                                <span class="nums">1111</span>
+                                <span class="nums">${value.sailnumber}</span>
                                 人评价
                             </a>
                         </p>
@@ -57,10 +57,11 @@ define(["pagination", "jlazyload"], function () {
                 array = [];
                 prev = null;
                 next = null;
-                $(".list li").each(function (index, element) {
+                $(".list .goods").each(function (index, element) {
                     array[index] = $(this);
                     array_default[index] = $(this);
                 })
+                console.log(array_default);
 
                 //懒加载
                 $(function () {
@@ -69,7 +70,7 @@ define(["pagination", "jlazyload"], function () {
             })
 
             //分页
-            /* $(".page").pagination({
+            $(".page").pagination({
                 pageCount: 3,
                 jump: true,
                 coping: true,
@@ -88,13 +89,40 @@ define(["pagination", "jlazyload"], function () {
                         let $renderstr = "";
                         $.each(data, function (index, value) {
                             $renderstr += `
-                            <li>
-                                <a href="detail.html?sid=${value.sid}">
-                                    <img class="lazy" data-original="${value.url}" width="200" height="200">
-                                    <p>${value.title}</p>
-                                    <span class="price">¥${value.price}</span>
-                                    <span>销量${value.sailnumber}</span>
+                            <li class="goods">
+                                <a href="">
+                                    <img src="${value.url}" alt="">
                                 </a>
+                                <p class="price">¥${value.price}</p>
+                                <p class="title">
+                                    <a href="">
+                                        ${value.title}
+                                    </a>
+                                </p>
+                                <p class="evaluate">
+                                    <a href="">
+                                        已有
+                                        <span class="nums">${value.sailnumber}</span>
+                                        人评价
+                                    </a>
+                                </p>
+                                <p class="shop">
+                                    <span>自营</span>
+                                </p>
+                                <ul class="option clearfix">
+                                    <li>
+                                        <i class="i_1"></i>
+                                    </li>
+                                    <li>
+                                        <i class="i_2"></i>
+                                    </li>
+                                    <li>
+                                        <i class="i_3"></i>
+                                    </li>
+                                    <li>
+                                        <i class="i_4"></i>
+                                    </li>
+                                </ul>
                             </li>
                         `
                         })
@@ -109,7 +137,7 @@ define(["pagination", "jlazyload"], function () {
                         array = [];
                         prev = null;
                         next = null;
-                        $(".list li").each(function (index, element) {
+                        $(".list .goods").each(function (index, element) {
                             array[index] = $(this);
                             array_default[index] = $(this);
                         })
@@ -117,8 +145,47 @@ define(["pagination", "jlazyload"], function () {
                 }
             })
 
+            //排序
+            let count = 0;
+            $rule_li = $(".rule li");
+            $rule_li.on("click", function () {
+                $(this).addClass("active").siblings().removeClass("active")
+            })
+            $rule_price = $(".rule_price");
+            $rule_price.on("click", function () {
+                count++;
+                if(count % 2 == 1){
+                    for (let i = 0; i < array.length; i++) {
+                        for (let j = 0; j < array.length - i - 1; j++) {
+                            prev = parseFloat(array[j].find(".price").html().substring(1));
+                            next = parseFloat(array[j + 1].find(".price").html().substring(1));
+                            if (prev > next) {
+                                let temp = array[j];
+                                array[j] = array[j + 1];
+                                array[j + 1] = temp;
+                            }
+                        }
+                    }
+                }else{
+                    for (let i = 0; i < array.length; i++) {
+                        for (let j = 0; j < array.length - i - 1; j++) {
+                            prev = parseFloat(array[j].find(".price").html().substring(1));
+                            next = parseFloat(array[j + 1].find(".price").html().substring(1));
+                            if (prev < next) {
+                                let temp = array[j];
+                                array[j] = array[j + 1];
+                                array[j + 1] = temp;
+                            }
+                        }
+                    }
+                }
+                
+                $.each(array, function (index, value) {
+                    $(".list>ul").append(value);
+                })
+            })
             //默认排序
-            $(".btnlist button").eq(0).on("click",function(){
+            /* $(".btnlist button").eq(0).on("click",function(){
                 $.each(array_default,function(index,value){
                     $(".list ul").append(value);
                 })

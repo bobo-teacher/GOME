@@ -1,0 +1,85 @@
+@charset "utf-8";
+//国美帮助
+.gome_help_box{
+    overflow: hidden;
+}
+.gome-help{
+    margin-top: 30px;
+    .header{
+        background: #f5f5f5;
+        padding: 15px 0;
+        overflow: hidden;
+    }
+    .header li{
+        float: left;
+        width: 33%;
+        text-align: center;
+    }
+    .header span{
+        display: inline-block;
+        width: 40px;
+        height: 42px;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .header .l{
+        background-position: 0 -1469px;
+    }
+    .header .c{
+        background-position: -40px -1469px;
+    }
+    .header .r{
+        background-position: -80px -1469px;
+    }
+    .header .attr{
+        line-height: 40px;
+        font-size: 18px;
+        line-height: 37px;
+        font-weight: bold;
+        color: #404040;
+    }
+    .header b{
+        margin: 0 16px;
+        color: #ccc;
+        display: inline-block;
+        width: 3px;
+        height: 10px;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+        vertical-align: middle;
+        background-position: -120px -1489px;
+    }
+    .header .detail{
+        font-weight: 400;
+        line-height: 40px;
+        font: 700 18px/37px;
+        color: #404040;
+    }
+    .header a:hover{
+        color: $activecolor;
+    }
+}
+.hlep_main{
+    width: 1320px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    dl{
+        float: left;
+        width: 9%;
+        padding: 15px 0 0 125px;
+        white-space: nowrap;
+    }
+    dt{
+        font: 16px/25px;
+        color: #5e5e5e;
+    }
+    a{
+        font-size: 12px;
+        line-height: 22px;
+        color: #a5a5a5;
+    }
+    a:hover{
+        color: $activecolor;
+    }
+}

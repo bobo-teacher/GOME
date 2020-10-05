@@ -1,0 +1,80 @@
+@charset "utf-8";
+.aside{
+    width: 35px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #5c5c5c;
+    z-index: 9999;
+    li:hover{
+        background-color: #333;
+    }
+    .icon{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 7px 0;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+    }
+    .top_ul{
+        position: absolute;
+        right: 0;
+        top: 218px;
+        text-align: center;
+        li{
+            border-bottom: 1px solid #ccc;
+        }
+        .us_box{
+            width: 35px;
+            height: 39px;
+        }
+        .us{
+            display: inline-block;
+            width: 24px;
+            height: 18px;
+            margin-top: 9px;
+            background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -18px -1025px;
+        }
+        i{
+            background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -24px -1046px!important;
+            height: 20px;
+            width: 31px;
+            display: block!important;
+            margin-bottom: 3px;
+        }
+        span{
+            display: inline-block;
+            width: 12px;
+            font-size: 12px;line-height: 18px;
+            color: white;
+        }
+        .cart_box{
+            width: 35px;
+            height: 100px;
+            padding-top: 20px;
+        }
+        .favo{
+            background-position: -71px -1023px;
+        }
+        
+    }
+    .bottom_ul{
+        position: absolute;
+        bottom: 50px;
+        text-align: center;
+        width: 35px;
+        .code{
+            background-position: -212px -473px;
+        }
+        .search{
+            background-position: -212px -493px;
+        }
+        .service{
+            background-position: -212px -513px;
+        }
+        .arrow{
+            background-position: -212px -533px;
+        }
+    }
+}

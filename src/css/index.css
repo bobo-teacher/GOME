@@ -1692,7 +1692,8 @@ main .hot {
     border-bottom: 1px dashed #eee;
     position: relative;
     float: left;
-    margin-right: -2px; }
+    margin-right: -2px;
+    overflow: hidden; }
     main .hot .other li img {
       width: 120px;
       height: 120px;
@@ -1716,11 +1717,94 @@ main .hot {
       color: #f5004b;
       height: 14px;
       width: 120px; }
+    main .hot .other li b {
+      display: block;
+      width: 70px;
+      height: 77px;
+      position: absolute;
+      right: 10px;
+      top: 39px;
+      font-size: 125px;
+      color: #f9f7f5;
+      font-style: italic; }
   main .hot .other li:hover .detail_title {
     color: #f5004b; }
-main .gome-help {
-  height: 222px;
-  background: fuchsia; }
+  main .hot .hot_r {
+    width: 361px;
+    float: right; }
+  main .hot .service_header {
+    height: 60px;
+    overflow: hidden; }
+    main .hot .service_header p {
+      float: right;
+      overflow: hidden; }
+    main .hot .service_header a, main .hot .service_header span {
+      display: inline-block;
+      margin-top: 33px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #5e5e5e; }
+      main .hot .service_header a i, main .hot .service_header span i {
+        font-style: normal; }
+      main .hot .service_header a i:hover, main .hot .service_header span i:hover {
+        color: #f5004b; }
+  main .hot .service_main {
+    width: 359px;
+    height: 338px;
+    border: 1px solid #eee;
+    background: #fcfcfc; }
+    main .hot .service_main li {
+      position: relative; }
+    main .hot .service_main img {
+      width: 110px;
+      height: 110px;
+      background: #f6f6f6;
+      border-radius: 68px;
+      display: block;
+      margin: 29px 40px 30px 30px;
+      float: left; }
+    main .hot .service_main .detail {
+      float: left;
+      overflow: hidden; }
+    main .hot .service_main .detail_title {
+      height: 16px;
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 24px;
+      color: #404040; }
+    main .hot .service_main .detail_price {
+      margin-top: 14px;
+      height: 16px;
+      font-size: 16px;
+      line-height: 16px;
+      color: #f5004b; }
+      main .hot .service_main .detail_price span {
+        font-size: 12px;
+        color: #888; }
+    main .hot .service_main .detail_hlep {
+      margin-top: 39px; }
+      main .hot .service_main .detail_hlep p {
+        color: #888;
+        font-size: 12px;
+        line-height: 18px; }
+    main .hot .service_main .first {
+      border-bottom: 1px dashed #eee; }
+    main .hot .service_main li:hover .detail_title {
+      color: #f5004b; }
+    main .hot .service_main .house_ser {
+      width: 56px;
+      overflow: hidden;
+      position: absolute;
+      top: 90px;
+      left: 90px; }
+      main .hot .service_main .house_ser span {
+        width: 48px;
+        padding: 0 4px;
+        margin-top: 4px;
+        background: #dd00a7;
+        color: white;
+        font-size: 12px;
+        line-height: 18px; }
 
 footer {
   border-top: 1px solid #dd00a7;
@@ -1913,5 +1997,138 @@ footer {
       background-position: -216px -52px; }
     #elevator .arrow li .arrow_down {
       background-position: -216px 0; }
+
+.aside {
+  width: 35px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #5c5c5c;
+  z-index: 9999; }
+  .aside li:hover {
+    background-color: #333; }
+  .aside .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 7px 0;
+    background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat; }
+  .aside .top_ul {
+    position: absolute;
+    right: 0;
+    top: 218px;
+    text-align: center; }
+    .aside .top_ul li {
+      border-bottom: 1px solid #ccc; }
+    .aside .top_ul .us_box {
+      width: 35px;
+      height: 39px; }
+    .aside .top_ul .us {
+      display: inline-block;
+      width: 24px;
+      height: 18px;
+      margin-top: 9px;
+      background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -18px -1025px; }
+    .aside .top_ul i {
+      background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -24px -1046px !important;
+      height: 20px;
+      width: 31px;
+      display: block !important;
+      margin-bottom: 3px; }
+    .aside .top_ul span {
+      display: inline-block;
+      width: 12px;
+      font-size: 12px;
+      line-height: 18px;
+      color: white; }
+    .aside .top_ul .cart_box {
+      width: 35px;
+      height: 100px;
+      padding-top: 20px; }
+    .aside .top_ul .favo {
+      background-position: -71px -1023px; }
+  .aside .bottom_ul {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    width: 35px; }
+    .aside .bottom_ul .code {
+      background-position: -212px -473px; }
+    .aside .bottom_ul .search {
+      background-position: -212px -493px; }
+    .aside .bottom_ul .service {
+      background-position: -212px -513px; }
+    .aside .bottom_ul .arrow {
+      background-position: -212px -533px; }
+
+.gome_help_box {
+  overflow: hidden; }
+
+.gome-help {
+  margin-top: 30px; }
+  .gome-help .header {
+    background: #f5f5f5;
+    padding: 15px 0;
+    overflow: hidden; }
+  .gome-help .header li {
+    float: left;
+    width: 33%;
+    text-align: center; }
+  .gome-help .header span {
+    display: inline-block;
+    width: 40px;
+    height: 42px;
+    background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 10px; }
+  .gome-help .header .l {
+    background-position: 0 -1469px; }
+  .gome-help .header .c {
+    background-position: -40px -1469px; }
+  .gome-help .header .r {
+    background-position: -80px -1469px; }
+  .gome-help .header .attr {
+    line-height: 40px;
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: bold;
+    color: #404040; }
+  .gome-help .header b {
+    margin: 0 16px;
+    color: #ccc;
+    display: inline-block;
+    width: 3px;
+    height: 10px;
+    background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+    vertical-align: middle;
+    background-position: -120px -1489px; }
+  .gome-help .header .detail {
+    font-weight: 400;
+    line-height: 40px;
+    font: 700 18px/37px;
+    color: #404040; }
+  .gome-help .header a:hover {
+    color: #f5004b; }
+
+.hlep_main {
+  width: 1320px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+  .hlep_main dl {
+    float: left;
+    width: 9%;
+    padding: 15px 0 0 125px;
+    white-space: nowrap; }
+  .hlep_main dt {
+    font: 16px/25px;
+    color: #5e5e5e; }
+  .hlep_main a {
+    font-size: 12px;
+    line-height: 22px;
+    color: #a5a5a5; }
+  .hlep_main a:hover {
+    color: #f5004b; }
 
 /*# sourceMappingURL=index.css.map */
