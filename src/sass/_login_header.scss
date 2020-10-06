@@ -1,0 +1,16 @@
+@charset "utf-8";
+header{
+    overflow: hidden;
+    width: 990px;
+    height: 120px;
+    margin: 0 auto;
+    h1{
+        width: 300px;
+        height: 62px;
+        margin-top: 31px;
+        text-indent: -9999px;
+        float: left;
+        background: url(https://css.gomein.net.cn/images/regfront/register/loginlogo.png) no-repeat;
+        cursor: pointer;
+    }
+}

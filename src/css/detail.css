@@ -611,29 +611,43 @@ footer {
     position: absolute;
     left: 448px;
     top: 0;
-    display: none; }
+    display: none;
+    overflow: hidden;
+    z-index: 999; }
+    .detail .detail_l #bf #bpic {
+      position: absolute; }
   .detail .detail_l #ulist {
+    width: 450px;
     height: 62px;
     margin: 20px 0 16px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .detail .detail_l #ulist span {
       display: inline-block;
       width: 11px;
       height: 21px;
       background: url(https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.59/css/i/bg-sprite.png?__sprite) no-repeat;
       position: absolute; }
+    .detail .detail_l #ulist #list {
+      position: relative; }
     .detail .detail_l #ulist #left span {
       background-position: 0 -834px;
       top: 20px;
-      left: 0; }
+      left: 0;
+      z-index: 999; }
     .detail .detail_l #ulist #right span {
       background-position: 0 -865px;
       top: 20px;
       right: 0; }
+    .detail .detail_l #ulist #list ul {
+      margin-left: 25px;
+      position: absolute; }
     .detail .detail_l #ulist #list li {
       margin-right: 25px;
       float: left;
-      border: 1px solid transparent; }
+      border: 1px solid transparent;
+      width: 60px;
+      height: 60px; }
     .detail .detail_l #ulist #list li:hover {
       border: 1px solid #f5004b; }
     .detail .detail_l #ulist #list img {
@@ -643,8 +657,7 @@ footer {
 .detail .detail_r {
   width: 720px;
   float: left;
-  margin-left: 30px;
-  background: skyblue; }
+  margin-left: 30px; }
   .detail .detail_r h2 {
     font-size: 16px;
     line-height: 26px;
@@ -735,7 +748,8 @@ footer {
       line-height: 20px;
       font-size: 12px;
       width: 48px;
-      text-align: justify; }
+      text-align: justify;
+      margin-right: 10px; }
     .detail .detail_r .tese span {
       display: inline-block;
       width: 86px;
@@ -761,6 +775,146 @@ footer {
       background-position: 0 -2613px; }
   .detail .detail_r .place {
     margin-top: 20px; }
+    .detail .detail_r .place label {
+      margin-left: 20px;
+      color: #888;
+      float: left;
+      line-height: 20px;
+      font-size: 12px;
+      width: 48px;
+      text-align: justify;
+      margin-right: 10px; }
+    .detail .detail_r .place .adress {
+      float: left;
+      line-height: 20px;
+      font-size: 12px;
+      color: #5e5e5e;
+      position: relative; }
+      .detail .detail_r .place .adress i {
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 6px;
+        right: -14px;
+        top: 50%;
+        margin-top: -3px;
+        background: url(https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.59/css/i/bg-sprite.png?__sprite) no-repeat;
+        background-position: 0 -632px; }
+  .detail .detail_r .color {
+    margin-top: 16px;
+    height: 49px; }
+    .detail .detail_r .color label {
+      margin-left: 20px;
+      color: #888;
+      float: left;
+      line-height: 42px;
+      font-size: 12px;
+      width: 48px;
+      text-align: justify;
+      margin-right: 10px; }
+    .detail .detail_r .color a {
+      display: inline-block;
+      width: 90px;
+      height: 40px;
+      border: 1px solid #ccc; }
+      .detail .detail_r .color a img {
+        width: 40px;
+        height: 40px; }
+      .detail .detail_r .color a span {
+        display: inline-block;
+        width: 24px;
+        height: 12px;
+        padding: 14px 10px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #5e5e5e; }
+  .detail .detail_r .service {
+    height: 42px; }
+    .detail .detail_r .service label {
+      margin-left: 20px;
+      color: #888;
+      float: left;
+      line-height: 38px;
+      font-size: 12px;
+      width: 48px;
+      text-align: justify;
+      margin-right: 10px; }
+    .detail .detail_r .service span {
+      padding: 11px 8px 11px 30px;
+      position: relative;
+      border: 1px solid #ccc;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 12px;
+      color: #5e5e5e; }
+      .detail .detail_r .service span i {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        top: 9px;
+        left: 8px; }
+        .detail .detail_r .service span i img {
+          width: 17px;
+          height: 17px; }
+  .detail .detail_r .tocart {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 34px;
+    height: 42px; }
+    .detail .detail_r .tocart .input_box {
+      margin-right: 15px;
+      position: relative;
+      float: left;
+      width: 46px;
+      height: 38px;
+      border: 1px solid #ccc; }
+      .detail .detail_r .tocart .input_box input {
+        border: 0;
+        outline: none;
+        width: 32px;
+        border: none;
+        line-height: 38px;
+        text-align: center;
+        float: left;
+        height: 38px;
+        color: #5e5e5e;
+        font-size: 12px; }
+      .detail .detail_r .tocart .input_box .cell {
+        display: block;
+        float: left;
+        width: 13px;
+        height: 18px;
+        border-left: 1px solid #ccc;
+        line-height: 18px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        color: #5e5e5e;
+        background: #f8f8f8;
+        font-size: 12px; }
+      .detail .detail_r .tocart .input_box .minus {
+        display: block;
+        float: left;
+        width: 13px;
+        height: 18px;
+        border-left: 1px solid #ccc;
+        line-height: 18px;
+        text-align: center;
+        color: #5e5e5e;
+        background: #f8f8f8;
+        font-size: 12px; }
+  .detail .detail_r button {
+    border: 0;
+    outline: none;
+    padding: 8px 25px;
+    height: 24px;
+    font-size: 18px;
+    line-height: 22px;
+    background: #f5004b;
+    color: white;
+    box-sizing: content-box;
+    cursor: pointer; }
 
 .aside {
   width: 35px;

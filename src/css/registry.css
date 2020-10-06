@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: top; }
+
+li {
+  list-style: none; }
+
+.center {
+  width: 1200px;
+  margin: 0 auto; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
+footer {
+  border-top: 1px solid #dd00a7;
+  background: #f7f7f7;
+  padding-top: 20px; }
+  footer .top {
+    position: relative; }
+    footer .top span {
+      display: inline-block;
+      width: 265px;
+      height: 45px;
+      padding: 0 50px 40px 0; }
+      footer .top span i {
+        width: 45px;
+        height: 45px;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+        float: left; }
+      footer .top span p {
+        float: left;
+        margin-left: 10px; }
+      footer .top span strong {
+        display: block;
+        font-weight: 400;
+        color: #333;
+        font-size: 16px;
+        line-height: 25px; }
+      footer .top span a {
+        color: #999;
+        font-size: 12px;
+        line-height: 20px; }
+    footer .top span:first-child i {
+      background-position: 0 -135px; }
+    footer .top span:nth-child(2) i {
+      background-position: -45px -135px; }
+    footer .top li {
+      float: left;
+      padding-right: 13px; }
+      footer .top li a {
+        font-size: 12px;
+        line-height: 22px;
+        color: #666; }
+    footer .top p {
+      color: #999;
+      font-size: 12px;
+      line-height: 22px; }
+      footer .top p a {
+        color: #999; }
+    footer .top .qrcode-section {
+      width: 250px;
+      height: 112px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center; }
+      footer .top .qrcode-section span {
+        padding: 0;
+        font-size: 12px;
+        line-height: 22px;
+        color: #999;
+        float: left; }
+        footer .top .qrcode-section span p {
+          margin: 0; }
+      footer .top .qrcode-section i {
+        display: inline-block; }
+      footer .top .qrcode-section .sm {
+        width: 50px;
+        height: 47px;
+        margin: 0 10px; }
+        footer .top .qrcode-section .sm i {
+          width: 40px;
+          height: 25px;
+          background-image: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+          background-repeat: no-repeat; }
+        footer .top .qrcode-section .sm p {
+          width: 50px; }
+      footer .top .qrcode-section .wx i {
+        background-position: -105px -135px; }
+      footer .top .qrcode-section .phone i {
+        background-position: -185px -135px; }
+      footer .top .qrcode-section .big {
+        width: 110px;
+        height: 112px; }
+        footer .top .qrcode-section .big i {
+          width: 90px;
+          height: 90px;
+          margin-left: 10px;
+          background: url(https://gfs11.gomein.net.cn/T1uZdyBXCT1RCvBVdK.jpg) no-repeat; }
+        footer .top .qrcode-section .big p {
+          width: 110px; }
+  footer .bottom {
+    border-top: 1px solid #e6e6e6;
+    padding: 10px 0 25px 0; }
+    footer .bottom a {
+      display: inline-block;
+      width: 120px;
+      vertical-align: top; }
+      footer .bottom a i {
+        float: left;
+        width: 35px;
+        height: 35px;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat; }
+      footer .bottom a p {
+        font-size: 12px;
+        line-height: 18px;
+        color: #999; }
+    footer .bottom .big {
+      width: 170px; }
+    footer .bottom a:first-child i {
+      background-position: 0 -180px; }
+    footer .bottom a:nth-child(2) i {
+      background-position: -35px -180px; }
+    footer .bottom a:nth-child(3) i {
+      background-position: -70px -180px; }
+    footer .bottom a:nth-child(4) i {
+      background-position: -105px -180px; }
+    footer .bottom a:nth-child(5) i {
+      background-position: -140px -180px; }
+    footer .bottom a:nth-child(6) i {
+      background-position: -175px -180px; }
+    footer .bottom a:nth-child(7) i {
+      background-position: -238px -180px; }
+
+header {
+  overflow: hidden;
+  width: 990px;
+  height: 120px;
+  margin: 0 auto; }
+  header h1 {
+    width: 300px;
+    height: 62px;
+    margin-top: 31px;
+    text-indent: -9999px;
+    float: left;
+    background: url(https://css.gomein.net.cn/images/regfront/register/loginlogo.png) no-repeat;
+    cursor: pointer; }
+
+main {
+  border-top: 1px solid #dd00a7; }
+  main form {
+    width: 340px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    padding: 20px; }
+  main form p {
+    border: 1px solid #ccc;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px; }
+  main form label {
+    display: inline-block;
+    width: 80px;
+    padding-left: 10px; }
+  main form input {
+    width: 160px;
+    border: 0;
+    outline: none; }
+  main form p:last-child {
+    text-align: center;
+    background: red;
+    color: white; }
+  main form span {
+    display: block;
+    height: 20px;
+    font-size: 12px;
+    color: #ccc;
+    line-height: 20px; }
+  main aside {
+    display: inline-block;
+    font-size: 14px; }
+  main form p:last-child input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: red;
+    color: white; }
+
+/*# sourceMappingURL=registry.css.map */

@@ -14,17 +14,17 @@ define(["pagination", "jlazyload"], function () {
                 $.each(data, function (index, value) {
                     $renderstr += `
                     <li class="goods">
-                        <a href="">
+                        <a href="detail.html?sid=${value.sid}">
                             <img src="${value.url}" alt="">
                         </a>
                         <p class="price">¥${value.price}</p>
                         <p class="title">
-                            <a href="">
+                            <a href="detail.html?sid=${value.sid}">
                                 ${value.title}
                             </a>
                         </p>
                         <p class="evaluate">
-                            <a href="">
+                            <a href="detail.html?sid=${value.sid}">
                                 已有
                                 <span class="nums">${value.sailnumber}</span>
                                 人评价
@@ -90,17 +90,17 @@ define(["pagination", "jlazyload"], function () {
                         $.each(data, function (index, value) {
                             $renderstr += `
                             <li class="goods">
-                                <a href="">
+                                <a href="detail.html?sid=${value.sid}">
                                     <img src="${value.url}" alt="">
                                 </a>
                                 <p class="price">¥${value.price}</p>
                                 <p class="title">
-                                    <a href="">
+                                    <a href="detail.html?sid=${value.sid}">
                                         ${value.title}
                                     </a>
                                 </p>
                                 <p class="evaluate">
-                                    <a href="">
+                                    <a href="detail.html?sid=${value.sid}">
                                         已有
                                         <span class="nums">${value.sailnumber}</span>
                                         人评价
