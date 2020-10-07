@@ -379,7 +379,7 @@ define(["jcookie"], function () {
             //倒计时
             lastTime();
             function lastTime() {
-                let $lastDate = new Date(2020,9,5,18,0,0);//设置未来时间
+                let $lastDate = new Date(2020,9,8,18,0,0);//设置未来时间
                 let $date = new Date();//获取当前时间
                 let $tolal = parseInt(($lastDate.getTime() - $date.getTime()) / 1000);//距离未来时间的总秒数
                 let $sec = doubleNum($tolal % 60);

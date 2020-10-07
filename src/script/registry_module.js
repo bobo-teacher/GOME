@@ -21,13 +21,58 @@ define([],function(){
             username.onfocus = function () {
                 aSpan[0].innerHTML = "支持中文、字母、数字、“-”、“_”的组合，4-20个字符";
                 aSpan[0].style.color = "#666";
-                if (userflag == true) {
-                    aSpan[0].innerHTML = "恭喜✅";
-                    aSpan[0].style.color = "green";
+                // if (userflag == true) {
+                //     aSpan[0].innerHTML = "恭喜✅";
+                //     aSpan[0].style.color = "green";
+                // }
+            }
+
+            username.onblur = function(){
+                let user = username.value;
+                var userlen = username.value.length;
+                var reg = /^[a-zA-Z\u4e00-\u9fa5\d-_]+$/;
+                if (username.value != "") {
+                    if (userlen >= 4 && userlen <= 20) {
+                        if (reg.test(username.value)) {
+                            $.ajax({
+                                type:"post",
+                                url:"http://localhost:8080/fuwuqi/loginregistry2/php/registry.php",
+                                data:{
+                                    username:user
+                                }
+                            }).done((data)=>{
+                                if(!data){
+                                    console.log(111);
+                                    aSpan[0].innerHTML = "恭喜✅";
+                                    aSpan[0].style.color = "green";
+                                    userflag = true;
+                                }else{
+                                    aSpan[0].innerHTML = "用户名已存在，请重新输入";
+                                    aSpan[0].style.color = "red";
+                                    userflag = false;
+                                }
+                            })
+                        } else {
+                            aSpan[0].innerHTML = "用户名只能由中文、字母、数字、“-”、“_”组成";
+                            aSpan[0].style.color = "red";
+                            userflag = false;
+                        }
+                    } else {
+                        aSpan[0].innerHTML = "用户名长度4-20个字符";
+                        aSpan[0].style.color = "red";
+                        userflag = false;
+                    }
+                } else {
+                    aSpan[0].innerHTML = "用户名不能为空";
+                    aSpan[0].style.color = "red";
+                    userflag = false;
                 }
+                
+
+
             }
     
-            username.onblur = function () {
+            /* username.onblur = function () {
                 var userlen = username.value.length;
                 var reg = /^[a-zA-Z\u4e00-\u9fa5\d-_]+$/
                 if (username.value != "") {
@@ -51,7 +96,7 @@ define([],function(){
                     aSpan[0].style.color = "red";
                     userflag = false;
                 }
-            }
+            } */
     
             password.onfocus = function () {
                 aSpan[1].innerHTML = "建议使用字母、数字和符号两种及以上组合，6-20个字符";
@@ -255,13 +300,6 @@ define([],function(){
                     tpwflag = false;
                 }
             }
-    
-            var userflag = false;
-            var phoneflag = false;
-            var passflag = false;
-            var pass2flag = false;
-            var pwflag = false;
-            var tpwflag = false;
             form.onsubmit = function () {
                 if (username.value == "") {
                     aSpan[0].innerHTML = "用户名不能为空";

@@ -1,0 +1,23 @@
+@charset "utf-8";
+header{
+    overflow: hidden;
+    width: 990px;
+    height: 120px;
+    margin: 0 auto;
+    .logo{
+        float: left;
+        margin: 32px 10px 0 0;
+        a{
+            display: inline-block;
+            width: 125px;
+            height: 56px;
+            background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/logo.png) no-repeat;
+        }
+    }
+    .cart_logo{
+        float: left;
+        width: 135px;
+        height: 120px;
+        background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/gwc.png) no-repeat 0 32px;
+    }
+}

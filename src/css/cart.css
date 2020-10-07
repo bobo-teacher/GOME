@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: top; }
+
+li {
+  list-style: none; }
+
+.center {
+  width: 1200px;
+  margin: 0 auto; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
+.nav {
+  height: 31px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #f3f3f3; }
+  .nav nav li {
+    float: left;
+    font-size: 12px;
+    line-height: 29px;
+    padding: 0 20px 0 10px;
+    position: relative;
+    border: 1px solid #f8f8f8;
+    border-bottom: 0;
+    height: 30px; }
+    .nav nav li .active {
+      color: #f5004b; }
+  .nav nav .arrow_active {
+    background: white;
+    border-color: #e6e6e6;
+    border-bottom: 1px solid white; }
+    .nav nav .arrow_active i {
+      background-position: -55px -433px; }
+  .nav nav .public-dropdown {
+    width: 290px;
+    height: 200px;
+    padding: 10px 15px;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    background: white;
+    z-index: 999;
+    display: none; }
+    .nav nav .public-dropdown .top {
+      width: 290px;
+      height: 55px;
+      padding: 5px 0 20px 0; }
+      .nav nav .public-dropdown .top em {
+        float: left;
+        width: 55px;
+        height: 55px;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat 0 -337px; }
+      .nav nav .public-dropdown .top p {
+        float: left;
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #888; }
+      .nav nav .public-dropdown .top a {
+        color: #069; }
+    .nav nav .public-dropdown .bottom {
+      width: 290px;
+      height: 98px;
+      padding-top: 15px;
+      border-top: 1px solid #f3f3f3; }
+      .nav nav .public-dropdown .bottom .arrow {
+        margin-top: 20px;
+        float: left;
+        width: 16px;
+        height: 29px; }
+      .nav nav .public-dropdown .bottom .arrow_left {
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -60px -357px; }
+      .nav nav .public-dropdown .bottom .arrow_right {
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat -76px -357px; }
+      .nav nav .public-dropdown .bottom .wrap {
+        margin-top: 10px;
+        float: left;
+        width: 240px;
+        padding: 0 4px;
+        text-align: center; }
+        .nav nav .public-dropdown .bottom .wrap li {
+          padding: 0;
+          border: 0; }
+        .nav nav .public-dropdown .bottom .wrap .iconfont {
+          display: inline-block;
+          width: 80px;
+          height: 40px;
+          font-size: 40px; }
+        .nav nav .public-dropdown .bottom .wrap a {
+          display: inline-block;
+          width: 80px;
+          font-size: 12px;
+          line-height: 30px;
+          color: #ccc; }
+    .nav nav .public-dropdown .bottom > p {
+      font-size: 12px;
+      line-height: 18px;
+      height: 18px;
+      color: #5e5e5e; }
+      .nav nav .public-dropdown .bottom > p a {
+        height: 18px;
+        float: right;
+        color: #ccc; }
+  .nav nav .mygome-dropdown {
+    width: 260px;
+    height: 240px;
+    background: yellowgreen;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    display: none;
+    z-index: 999; }
+  .nav nav .company-dropdown {
+    width: 200px;
+    height: 200px;
+    background: darkgray;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 30px;
+    right: -1px;
+    display: none;
+    z-index: 999; }
+  .nav nav .serve-dropdown {
+    width: 200px;
+    height: 200px;
+    background: darkgray;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    display: none;
+    z-index: 999; }
+  .nav nav .website-dropdown {
+    width: 1198px;
+    height: 200px;
+    background: slateblue;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 30px;
+    right: -101px;
+    display: none;
+    z-index: 999; }
+  .nav nav .phone-dropdown {
+    width: 200px;
+    height: 200px;
+    background: darkgray;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 30px;
+    right: -1px;
+    display: none;
+    z-index: 999; }
+  .nav nav .left {
+    float: left; }
+  .nav nav .right {
+    float: right; }
+  .nav nav .first {
+    margin-right: 10px; }
+  .nav nav a {
+    display: inline-block;
+    height: 31px;
+    color: #888; }
+    .nav nav a i {
+      width: 12px;
+      height: 13px;
+      margin: -4px 0 0 5px;
+      background: url(../img/ui.png);
+      background-position: -145px -1496px;
+      position: static; }
+  .nav nav .icon-kefu, .nav nav .icon-phone {
+    background-position: 0 -513px;
+    color: #dd00a7; }
+  .nav nav i {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    width: 7px;
+    height: 4px;
+    background: url(../img/ui.png);
+    background-position: -62px -433px; }
+
+footer {
+  border-top: 1px solid #dd00a7;
+  background: #f7f7f7;
+  padding-top: 20px; }
+  footer .top {
+    position: relative; }
+    footer .top span {
+      display: inline-block;
+      width: 265px;
+      height: 45px;
+      padding: 0 50px 40px 0; }
+      footer .top span i {
+        width: 45px;
+        height: 45px;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat;
+        float: left; }
+      footer .top span p {
+        float: left;
+        margin-left: 10px; }
+      footer .top span strong {
+        display: block;
+        font-weight: 400;
+        color: #333;
+        font-size: 16px;
+        line-height: 25px; }
+      footer .top span a {
+        color: #999;
+        font-size: 12px;
+        line-height: 20px; }
+    footer .top span:first-child i {
+      background-position: 0 -135px; }
+    footer .top span:nth-child(2) i {
+      background-position: -45px -135px; }
+    footer .top li {
+      float: left;
+      padding-right: 13px; }
+      footer .top li a {
+        font-size: 12px;
+        line-height: 22px;
+        color: #666; }
+    footer .top p {
+      color: #999;
+      font-size: 12px;
+      line-height: 22px; }
+      footer .top p a {
+        color: #999; }
+    footer .top .qrcode-section {
+      width: 250px;
+      height: 112px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center; }
+      footer .top .qrcode-section span {
+        padding: 0;
+        font-size: 12px;
+        line-height: 22px;
+        color: #999;
+        float: left; }
+        footer .top .qrcode-section span p {
+          margin: 0; }
+      footer .top .qrcode-section i {
+        display: inline-block; }
+      footer .top .qrcode-section .sm {
+        width: 50px;
+        height: 47px;
+        margin: 0 10px; }
+        footer .top .qrcode-section .sm i {
+          width: 40px;
+          height: 25px;
+          background-image: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png);
+          background-repeat: no-repeat; }
+        footer .top .qrcode-section .sm p {
+          width: 50px; }
+      footer .top .qrcode-section .wx i {
+        background-position: -105px -135px; }
+      footer .top .qrcode-section .phone i {
+        background-position: -185px -135px; }
+      footer .top .qrcode-section .big {
+        width: 110px;
+        height: 112px; }
+        footer .top .qrcode-section .big i {
+          width: 90px;
+          height: 90px;
+          margin-left: 10px;
+          background: url(https://gfs11.gomein.net.cn/T1uZdyBXCT1RCvBVdK.jpg) no-repeat; }
+        footer .top .qrcode-section .big p {
+          width: 110px; }
+  footer .bottom {
+    border-top: 1px solid #e6e6e6;
+    padding: 10px 0 25px 0; }
+    footer .bottom a {
+      display: inline-block;
+      width: 120px;
+      vertical-align: top; }
+      footer .bottom a i {
+        float: left;
+        width: 35px;
+        height: 35px;
+        background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png) no-repeat; }
+      footer .bottom a p {
+        font-size: 12px;
+        line-height: 18px;
+        color: #999; }
+    footer .bottom .big {
+      width: 170px; }
+    footer .bottom a:first-child i {
+      background-position: 0 -180px; }
+    footer .bottom a:nth-child(2) i {
+      background-position: -35px -180px; }
+    footer .bottom a:nth-child(3) i {
+      background-position: -70px -180px; }
+    footer .bottom a:nth-child(4) i {
+      background-position: -105px -180px; }
+    footer .bottom a:nth-child(5) i {
+      background-position: -140px -180px; }
+    footer .bottom a:nth-child(6) i {
+      background-position: -175px -180px; }
+    footer .bottom a:nth-child(7) i {
+      background-position: -238px -180px; }
+
+header {
+  overflow: hidden;
+  width: 990px;
+  height: 120px;
+  margin: 0 auto; }
+  header .logo {
+    float: left;
+    margin: 32px 10px 0 0; }
+    header .logo a {
+      display: inline-block;
+      width: 125px;
+      height: 56px;
+      background: url(https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/logo.png) no-repeat; }
+  header .cart_logo {
+    float: left;
+    width: 135px;
+    height: 120px;
+    background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/gwc.png) no-repeat 0 32px; }
+
+main .center_cart {
+  width: 990px;
+  margin: 0 auto; }
+main .adress {
+  height: 53px; }
+main .adress_right {
+  float: right;
+  width: 448px;
+  padding: 10px 0;
+  overflow: hidden; }
+main .freight {
+  float: left;
+  margin-top: 2px; }
+  main .freight i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) no-repeat -468px -82px; }
+  main .freight a {
+    font-size: 12px;
+    line-height: 18px;
+    color: #5e5e5e; }
+main .place {
+  float: right; }
+  main .place span {
+    font-size: 12px;
+    line-height: 26px;
+    color: #a5a5a5; }
+  main .place a {
+    display: inline-block;
+    padding: 1px 20px 1px 1px;
+    font-size: 12px;
+    line-height: 22px;
+    height: 22px;
+    border: 1px solid #e5e5e5;
+    color: #333;
+    background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/new-cart-arrow.png) no-repeat right 8px; }
+main .cart_main_header {
+  height: 44px;
+  line-height: 44px;
+  background: #eee;
+  width: 988px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  font-size: 12px; }
+  main .cart_main_header li {
+    float: left; }
+main .cart_main_header li:nth-child(1) {
+  width: 40px;
+  height: 44px;
+  overflow: hidden;
+  position: relative; }
+  main .cart_main_header li:nth-child(1) input {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 15px;
+    left: 15px;
+    cursor: pointer; }
+main .cart_main_header li:nth-child(2) {
+  width: 91px; }
+main .cart_main_header li:nth-child(3) {
+  width: 411px; }
+main .cart_main_header li:nth-child(4) {
+  width: 133px; }
+main .cart_main_header li:nth-child(5) {
+  width: 80px; }
+main .cart_main_header li:nth-child(6) {
+  width: 84px;
+  text-align: right;
+  padding-right: 70px; }
+main .cart_list > ul {
+  overflow: hidden; }
+main .cart_list .cart_li {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 30px; }
+  main .cart_list .cart_li .cart_list_header {
+    position: relative; }
+  main .cart_list .cart_li .cart_list_header i {
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) -307px -64px no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  main .cart_list .cart_li .cart_list_header a {
+    color: #333;
+    font-size: 12px;
+    line-height: 42px;
+    margin-left: 40px; }
+main .cart_list_info {
+  border-top: 1px solid #ddd;
+  background: #fffaf4; }
+main .cart_list_info > ul {
+  height: 122px; }
+main .cart_list_info li {
+  float: left; }
+main .cart_list_info li:nth-child(1) {
+  width: 40px;
+  height: 100%;
+  position: relative; }
+  main .cart_list_info li:nth-child(1) input {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 20px;
+    left: 15px;
+    cursor: pointer; }
+main .cart_list_info li:nth-child(2) {
+  width: 91px;
+  padding-top: 20px; }
+  main .cart_list_info li:nth-child(2) a {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e6e6e6; }
+  main .cart_list_info li:nth-child(2) img {
+    width: 80px;
+    height: 80px; }
+main .cart_list_info li:nth-child(3) {
+  width: 208px;
+  padding-top: 20px; }
+  main .cart_list_info li:nth-child(3) a {
+    color: #333;
+    font-size: 12px;
+    line-height: 18px; }
+  main .cart_list_info li:nth-child(3) a:hover {
+    color: #f5004b; }
+main .cart_list_info li:nth-child(4) {
+  width: 160px;
+  padding: 20px 0 0 20px; }
+  main .cart_list_info li:nth-child(4) p {
+    color: #333;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a7a7a7; }
+  main .cart_list_info li:nth-child(4) .alter {
+    width: 46px;
+    height: 20px;
+    background-color: rgba(227, 16, 30, 0.1);
+    border-radius: 2px;
+    color: #E3101E;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 6px;
+    cursor: pointer; }
+    main .cart_list_info li:nth-child(4) .alter i {
+      display: inline-block;
+      width: 9px;
+      height: 6px;
+      background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) -934px -56px no-repeat; }
+main .cart_list_info li:nth-child(5) {
+  width: 133px;
+  padding: 20px 0 0 22px;
+  color: #333;
+  font-size: 12px;
+  line-height: 18px; }
+main .cart_list_info li:nth-child(6) {
+  width: 80px;
+  padding-top: 20px; }
+  main .cart_list_info li:nth-child(6) a {
+    float: left;
+    width: 15px;
+    height: 20px;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    background: white; }
+  main .cart_list_info li:nth-child(6) input {
+    float: left;
+    width: 46px;
+    height: 20px;
+    outline: none;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center; }
+main .cart_list_info li:nth-child(7) {
+  width: 84px;
+  padding: 20px 70px 0 0;
+  text-align: right;
+  color: #333;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 700; }
+main .cart_list_info li:nth-child(8) {
+  width: 79px;
+  padding-top: 20px;
+  font-size: 12px;
+  line-height: 18px; }
+  main .cart_list_info li:nth-child(8) a {
+    display: block;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    color: #666; }
+main .cart_main_footer {
+  background: #f3f3f3;
+  height: 60px; }
+main .left_ul, main .left_ul li, main .right_ul li {
+  float: left; }
+main .left_ul li:nth-child(1) {
+  width: 40px;
+  height: 60px;
+  position: relative; }
+  main .left_ul li:nth-child(1) input {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 23px;
+    left: 15px;
+    cursor: pointer; }
+main .left_ul li:nth-child(2), main .left_ul li:nth-child(3) {
+  padding-top: 19px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #333;
+  width: 60px; }
+main .left_ul li:nth-child(3) a {
+  color: #333; }
+main .left_ul li:nth-child(3) a:hover {
+  color: #f5004b; }
+main .right_ul {
+  float: right; }
+main .right_ul li:nth-child(1) {
+  margin-right: 30px;
+  padding-top: 19px;
+  font-size: 12px;
+  line-height: 22px; }
+  main .right_ul li:nth-child(1) a {
+    color: #333; }
+  main .right_ul li:nth-child(1) span {
+    font-weight: 900;
+    font-size: 14px;
+    color: #f5004b; }
+  main .right_ul li:nth-child(1) i {
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) no-repeat -155px -92px; }
+main .right_ul li:nth-child(2) {
+  padding-top: 19px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #333; }
+main .right_ul li:nth-child(3) {
+  margin-right: 10px;
+  padding-top: 19px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+  color: #f5004b; }
+main .right_ul li:nth-child(4) {
+  width: 136px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 60px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  background: #f5004b; }
+  main .right_ul li:nth-child(4) i {
+    display: inline-block;
+    margin-left: 6px;
+    width: 12px;
+    height: 13px;
+    background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) no-repeat -245px -84px; }
+main .right_ul li:nth-child(4):hover {
+  opacity: 0.8; }
+
+/*# sourceMappingURL=cart.css.map */

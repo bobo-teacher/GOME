@@ -1,0 +1,342 @@
+@charset "utf-8";
+main{
+    .center_cart{
+        width: 990px;
+        margin: 0 auto;
+    }
+    .adress{
+        height: 53px;
+    }
+    .adress_right{
+        float: right;
+        width: 448px;
+        padding: 10px 0;
+        overflow: hidden;
+    }
+    .freight{
+        float: left;
+        margin-top: 2px;
+        i{
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+            border-radius: 5px;
+            background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) no-repeat -468px -82px;
+        }
+        a{
+            font-size: 12px;
+            line-height: 18px;
+            color: #5e5e5e;
+        }
+    }
+    .place{
+        float: right;
+        span{
+            font-size: 12px;
+            line-height: 26px;
+            color: #a5a5a5;
+        }
+        a{
+            display: inline-block;
+            padding: 1px 20px 1px 1px;
+            font-size: 12px;
+            line-height: 22px;
+            height: 22px;
+            border: 1px solid #e5e5e5;
+            color: #333;
+            background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/new-cart-arrow.png) no-repeat right 8px;
+        }
+    }
+    .cart_main_header{
+        height: 44px;
+        line-height: 44px;
+        background: #eee;
+        width: 988px;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        font-size: 12px;
+        li{
+            float: left;
+        }
+    }
+    .cart_main_header li:nth-child(1){
+        width: 40px;
+        height: 44px;
+        overflow: hidden;
+        position: relative;
+        input{
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+        }
+    }
+    .cart_main_header li:nth-child(2){
+        width: 91px;
+    }
+    .cart_main_header li:nth-child(3){
+        width: 411px;
+    }
+    .cart_main_header li:nth-child(4){
+        width: 133px;
+    }
+    .cart_main_header li:nth-child(5){
+        width: 80px;
+    }
+    .cart_main_header li:nth-child(6){
+        width: 84px;
+        text-align: right;
+        padding-right: 70px;
+    }
+    .cart_list>ul{
+        overflow: hidden;
+    }
+    .cart_list .cart_li{
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 3px 3px 0 0;
+        margin-bottom: 30px;
+        .cart_list_header{
+            position: relative;
+        }
+        .cart_list_header i{
+            display: inline-block;
+            width: 20px;
+            height: 19px;
+            background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) -307px -64px no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .cart_list_header a{
+            color: #333;
+            font-size: 12px;
+            line-height: 42px;
+            margin-left: 40px;
+        }
+    }
+    .cart_list_info{
+        border-top: 1px solid #ddd;
+        background: #fffaf4;
+    }
+    .cart_list_info>ul{
+        height: 122px;
+    }
+    .cart_list_info li{
+        float: left;
+    }
+    .cart_list_info li:nth-child(1){
+        width: 40px;
+        height: 100%;
+        position: relative;
+        input{
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 20px;
+            left: 15px;
+            cursor: pointer;
+        }
+    }
+    .cart_list_info li:nth-child(2){
+        width: 91px;
+        padding-top: 20px;
+        a{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #e6e6e6;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .cart_list_info li:nth-child(3){
+        width: 208px;
+        padding-top: 20px;
+        a{
+            color: #333;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        a:hover{
+            color: $activecolor;
+        }
+    }
+    .cart_list_info li:nth-child(4){
+        width: 160px;
+        padding: 20px 0 0 20px;
+        p{
+            color: #333;
+            font-size: 12px;
+            line-height: 18px;
+            color: #a7a7a7;
+        }
+        .alter{
+            width: 46px;
+            height: 20px;
+            background-color: rgba(227,16,30,.1);
+            border-radius: 2px;
+            color: #E3101E;
+            font-size: 12px;
+            line-height: 20px;
+            padding-left: 6px;
+            cursor: pointer;
+            i{
+                display: inline-block;
+                width: 9px;
+                height: 6px;
+                background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) -934px -56px no-repeat;
+            }
+        }
+    }
+    .cart_list_info li:nth-child(5){
+        width: 133px;
+        padding: 20px 0 0 22px;
+        color: #333;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .cart_list_info li:nth-child(6){
+        width: 80px;
+        padding-top: 20px;
+        a{
+            float: left;
+            width: 15px;
+            height: 20px;
+            border: 1px solid #ccc;
+            color: #666;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            background: white;
+        }
+        input{
+            float: left;
+            width: 46px;
+            height: 20px;
+            outline: none;
+            border: 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    .cart_list_info li:nth-child(7){
+        width: 84px;
+        padding: 20px 70px 0 0;
+        text-align: right;
+        color: #333;
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 700;
+    }
+    .cart_list_info li:nth-child(8){
+        width: 79px;
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 18px;
+        a{
+            display: block;
+            margin-top: 1px;
+            margin-bottom: 2px;
+            color: #666;
+        }
+    }
+    .cart_main_footer{
+        background: #f3f3f3;
+        height: 60px;
+    }
+    .left_ul,.left_ul li,.right_ul li{
+        float: left;
+    }
+    .left_ul li:nth-child(1){
+        width: 40px;
+        height: 60px;
+        position: relative;
+        input{
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 23px;
+            left: 15px;
+            cursor: pointer;
+        }
+    }
+    .left_ul li:nth-child(2),.left_ul li:nth-child(3){
+        padding-top: 19px;
+        font-size: 12px;
+        line-height: 22px;
+        color: #333;
+        width: 60px;
+    }
+    .left_ul li:nth-child(3) a{
+        color: #333;
+    }
+    .left_ul li:nth-child(3) a:hover{
+        color: $activecolor;
+    }
+    .right_ul{
+        float: right;
+    }
+    .right_ul li:nth-child(1){
+        margin-right: 30px;
+        padding-top: 19px;
+        font-size: 12px;
+        line-height: 22px;
+        a{
+            color: #333;
+        }
+        span{
+            font-weight: 900;
+            font-size: 14px;
+            color: $activecolor;
+        }
+        i{
+            display: inline-block;
+            width: 7px;
+            height: 4px;
+            background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) no-repeat -155px -92px;
+        }
+    }
+    .right_ul li:nth-child(2){
+        padding-top: 19px;
+        font-size: 12px;
+        line-height: 22px;
+        color: #333;
+    }
+    .right_ul li:nth-child(3){
+        margin-right: 10px;
+        padding-top: 19px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 900;
+        color: $activecolor;
+    }
+    .right_ul li:nth-child(4){
+        width: 136px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 60px;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        background: $activecolor;
+        i{
+            display: inline-block;
+            margin-left: 6px;
+            width: 12px;
+            height: 13px;
+            background: url(https://css.gomein.net.cn/gmpro/2.0.0/cart/3.1.21/css/i/sprite.png?v=0.4.5) no-repeat -245px -84px;
+        }
+    }
+    .right_ul li:nth-child(4):hover{
+        opacity: 0.8;
+    }
+} 

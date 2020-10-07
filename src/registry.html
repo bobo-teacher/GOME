@@ -21,11 +21,10 @@
 
     <!-- 注册主体 -->
     <main>
-        <form action="success.html" id="registry">
-
-            <p><label>用户名</label><input type="text" class="username" placeholder="您的账户和登录名"></p>
+        <form action="http://localhost:8080/fuwuqi/GOME/php/registry.php" id="registry" method="POST">
+            <p><label>用户名</label><input type="text" class="username" placeholder="您的账户和登录名" name="username"></p>
             <span></span>
-            <p><label>设置密码</label><input type="text" class="password" placeholder="建议至少使用两种字符组合"></p>
+            <p><label>设置密码</label><input type="text" class="password" placeholder="建议至少使用两种字符组合" name="password"></p>
             <span></span>
             <p><label>确认密码</label><input type="text" class="password2" placeholder="请再次输入密码"></p>
             <span></span>
@@ -35,7 +34,7 @@
             <span></span>
             <p><label>手机验证码</label><input type="text" class="tpw" placeholder="请输入手机验证码"><b id="passcode2">获取验证码</b></p>
             <span></span>
-            <p><input type="submit" name="" id="" value="立即注册" class="submit"></p>
+            <p><input type="submit" name="submit" id="" value="立即注册" class="submit"></p>
         </form>
     </main>
     
