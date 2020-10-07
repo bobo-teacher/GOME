@@ -131,6 +131,23 @@ define(["jcookie"], function () {
                 $(".totalprice").html("¥" + $allprice.toFixed(2));
                 $(".amount-sum span").html($allcount);
             }
+
+            //登陆成功显示用户名，点击退出删除cookie
+            const $admin = $("#admin");
+            const $login = $(".login");
+            const $username = $("#admin span")
+            const $exit = $("#admin a")
+            if($.cookie("username")){
+                $username.html($.cookie("username"));
+                $admin.show();
+                $login.hide();
+            }
+    
+            $exit.on("click", function(){
+                $.cookie("username","", { expires: -1 , path: '/' });
+                $admin.hide();
+                $login.show();
+            })
         }
     }
 })

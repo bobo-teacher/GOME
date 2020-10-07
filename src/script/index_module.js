@@ -640,9 +640,9 @@ define(["jcookie"], function () {
             }
     
             $exit.on("click", function(){
-                $.cookie("username","", { expires: -1 });
+                $.cookie("username","", { expires: -1 , path: '/' });
                 $admin.hide();
-                login.show();
+                $login.show();
             })
         }
     }
